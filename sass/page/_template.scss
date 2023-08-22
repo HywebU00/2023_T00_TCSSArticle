@@ -62,7 +62,10 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
-  background-color: #fff;
+  // background-color: #fff;
+  background-image: url('../images/innerpagebg.jpg');
+  background-position: center top;
+  background-repeat: repeat;
   > .container {
     padding-top: 2em;
     padding-bottom: 3em;

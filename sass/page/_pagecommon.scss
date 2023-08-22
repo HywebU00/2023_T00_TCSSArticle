@@ -110,7 +110,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+    background-color: #fff;
     .num {
       position: absolute;
       left: 0;
@@ -365,6 +365,7 @@
         border: 1px solid #ccc;
         margin-bottom: 1em;
         align-items: center;
+        background-color: #fff;
         .project_options {
           flex: 0 0 auto;
           flex-basis: 150px;
@@ -379,6 +380,7 @@
           flex: 1 1 auto;
           display: flex;
           align-items: center;
+
           .checkedword {
             margin-right: 2em;
           }
@@ -394,6 +396,7 @@
         padding: 1em;
         border: 1px solid #ccc;
         margin-bottom: 1em;
+        background-color: #fff;
         .project_options {
           flex: 0 0 auto;
           flex-basis: 90px;

@@ -2,6 +2,7 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #fff;
   @include screen('xs_mobile') {
     width: 100%;
   }

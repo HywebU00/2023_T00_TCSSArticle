@@ -3017,6 +3017,7 @@ em[tooltip]:hover, em[tooltip]:focus {
   color: #333;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: #fff;
 }
 .category a:hover, .category a:focus {
   color: #fff;
@@ -6782,6 +6783,7 @@ abbr[title] {
 table {
   width: 100%;
   border-collapse: collapse;
+  background-color: #fff;
 }
 @media screen and (max-width: 575px) {
   table {
@@ -8906,7 +8908,9 @@ body.noscroll {
 }
 
 .innerpage {
-  background-color: #fff;
+  background-image: url("../images/innerpagebg.jpg");
+  background-position: center top;
+  background-repeat: repeat;
 }
 .innerpage > .container {
   padding-top: 2em;
@@ -10500,6 +10504,7 @@ h2.title {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
 }
 .listqaBlock .listqa .num {
   position: absolute;
@@ -10750,6 +10755,7 @@ h2.title {
   border: 1px solid #ccc;
   margin-bottom: 1em;
   align-items: center;
+  background-color: #fff;
 }
 .searchresults_block .rightblock .resultlist_group .selectall .project_options {
   flex: 0 0 auto;
@@ -10777,6 +10783,7 @@ h2.title {
   padding: 1em;
   border: 1px solid #ccc;
   margin-bottom: 1em;
+  background-color: #fff;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .project_options {
   flex: 0 0 auto;
