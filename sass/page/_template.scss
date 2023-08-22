@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('../images/body_bg_01.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #f6d8b6;
+  &.noscroll {
+    position: static !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    overflow-y: hidden !important;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// 最外圍預設為100%
+.wrapper {
+  width: 100%;
+  margin: 0px auto;
+
+  @include screen('mobile') {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
+
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+  margin: 0 auto;
+  max-width: $container-max; //請看_variable.scss
+  position: relative;
+  //   outline: 1px solid red;
+  @include screen('tablet') {
+    @include gutter(100px);
+  }
+  @include screen('xs_mobile') {
+    @include gutter(60px);
+  }
+}
+
+.main {
+  position: relative;
+  margin: 0 auto;
+  @include screen('mobile') {
+    padding-top: 60px;
+  }
+  // 可先設定一個中央區塊最大寬，限制accesskey對齊
+  h2 {
+    line-height: 1.25em;
+  }
+}
+
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.innerpage {
+  background-color: #fff;
+  > .container {
+    padding-top: 2em;
+    padding-bottom: 3em;
+    @include gutter(); //gutter 代表左右要留白
+    display: flex;
+    @include screen('tablet') {
+      @include gutter(100px);
+    }
+    @include screen('xs_mobile') {
+      @include gutter(60px);
+    }
+  }
+  .center_block {
+    flex: none;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .left_block {
+    flex: none;
+    flex-basis: 260px;
+    max-width: 260px;
+    margin-right: 40px;
+    &.hidden {
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    + .center_block {
+      flex: auto;
+      flex-basis: calc(100% - 300px);
+      max-width: calc(100% - 300px);
+    }
+    @include screen('tablet') {
+      display: none;
+      + .center_block {
+        flex: none;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  &.small_size {
+    font-size: 0.938em;
+  }
+  &.large_size {
+    font-size: 1.125em;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.wordred {
+  color: $color-red;
+}

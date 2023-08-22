@@ -1,0 +1,111 @@
+footer {
+  box-sizing: border-box;
+  @include clearfix;
+  text-align: left;
+  padding: 3em 0 2em;
+  background-color: #f7f6f2;
+  .container {
+    @include gutter;
+    > div {
+      padding-bottom: 1em;
+    }
+    display: flex;
+    @include screen('tablet') {
+      flex-wrap: wrap;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    &:hover,
+    &:focus {
+      color: darken($primaryColor, 10);
+    }
+  }
+  .footer_logo {
+    flex: 0 1 350px;
+  }
+  .footer_info {
+    flex: 1 1 auto;
+    p {
+      color: #4e4944;
+      margin: 0;
+      span {
+        margin-right: 1em;
+      }
+      &.Copyright {
+        color: #a39e98;
+      }
+    }
+  }
+  .footer_icon {
+    flex: 0 1 200px;
+    @include screen('tablet') {
+      flex: 1 1 100%;
+    }
+  }
+  // 版權連結
+  .footer_link {
+    @include li-reset();
+    @include clearfix();
+    display: flex;
+    @include screen('mobile') {
+      flex-direction: column;
+    }
+    li {
+      flex: 0 1 auto;
+      margin: 0px 5px 5px 0px;
+      @include screen('mobile') {
+        flex: 1 1 100%;
+      }
+      a {
+        display: block;
+        padding: 0.25em 1em;
+        background: $primaryColor;
+        color: #fff;
+
+        text-align: center;
+        transition: all 0.3s ease-out;
+        &:hover,
+        &:focus {
+          background: darken($primaryColor, 10);
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.65em;
+  }
+  .update,
+  .counter {
+    display: inline-block;
+    margin-right: 5px;
+    em {
+      font-style: normal;
+      color: #4e4944;
+      padding: 0 0.5em;
+    }
+  }
+  .footer_icon {
+    a {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      &:focus {
+        &:after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-shadow: 0px 0px 0px 1px $aHover inset;
+          z-index: 99;
+        }
+      }
+    }
+    img {
+      max-width: 120px;
+    }
+  }
+}
