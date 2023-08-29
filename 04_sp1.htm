@@ -109,225 +109,227 @@
             </div>
           </div>
           <!-- h2節點 -->
-          <h2 class="title">文獻叢刊瀏覽</h2>
+          <h2 class="title"><span>文獻叢刊瀏覽</span></h2>
           <!-- SP Start -->
           <section class="sp">
-            <!-- category -->
-            <div class="category">
-              <ul>
-                <li><a href="#">全部文獻叢刊</a></li>
-                <li><a href="#">方志</a></li>
-                <li><a href="#">檔案文獻</a></li>
-              </ul>
-            </div>
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
+            <div class="innercontent">
+              <!-- category -->
+              <div class="category">
+                <ul>
+                  <li><a href="#" class="active">全部文獻叢刊</a></li>
+                  <li><a href="#">方志</a></li>
+                  <li><a href="#">檔案文獻</a></li>
+                </ul>
+              </div>
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
                         </select>
-                      </label>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
-            </div>
-            <!-- Pagination end-->
-            <div class="table_list">
-              <table>
-                <!-- 無障礙 caption 標題預設隱藏 -->
-                <caption>
-                  無障礙表格標題
-                  <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
-                  <!-- <span class="summary">表格摘要</span> -->
-                </caption>
-                <thead>
-                  <tr>
-                    <th>序號</th>
-                    <th>文叢號</th>
-                    <th>書刊名</th>
-                    <th>作者</th>
-                    <th>出版年</th>
-                    <th>提要節錄</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="num">01</td>
-                    <td>第一種</td>
-                    <td>臺灣割據志</td>
-                    <td>川口長孺</td>
-                    <td>1957</td>
-                    <td>本書(一冊八六面五一、六００字)不分卷，日人川口長孺撰。原著係日本秘閣所藏抄本，今據再抄本排印。書中首述臺灣之風土及先住民習俗，次...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">02</td>
-                    <td>第二種</td>
-                    <td>東瀛識略</td>
-                    <td>丁紹儀</td>
-                    <td>1957</td>
-                    <td>本書(一冊一一三面六七、八００字)分八卷，無錫丁紹儀撰。據「自序」，清道光二十七年(丁未)秋渡臺，嘗佐臺灣道仝卜年幕。在臺勾留八閱月，凡...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">03</td>
-                    <td>第三種</td>
-                    <td>小琉球漫誌</td>
-                    <td>朱仕玠</td>
-                    <td>1957</td>
-                    <td>本書(一冊一０二面六一、二００字)凡十卷，朱仕玠撰。士玠字璧峰，號筠園；福建邵武建寧人。生於清康熙末年，與弟仕琇分以詩、古文名於世。年...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">04</td>
-                    <td>第四種</td>
-                    <td>臺海使槎錄</td>
-                    <td>黃叔璥</td>
-                    <td>1957</td>
-                    <td>本書(一冊一七七面一０六、二００字)凡八卷，前四卷「赤崁筆談」、次三卷「番俗六考」、末一卷「番俗雜記」；黃叔璥撰。叔璥字玉圃，號篤齋...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">05</td>
-                    <td>第五種</td>
-                    <td>臺灣鄭氏紀事</td>
-                    <td>川口長孺</td>
-                    <td>1958</td>
-                    <td>本書(一冊七八面四六、八００字)分上中下三卷，與第一種「臺灣割據志」同為日人川口長孺撰。按本書所述，起自日本慶長十七年明萬曆四十...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">06</td>
-                    <td>第六種</td>
-                    <td>臺游日記</td>
-                    <td>蔣師轍</td>
-                    <td>1957</td>
-                    <td>本書(一冊一四一面八四、六００字)分四卷，蔣師轍撰。師轍字紹由，江蘇上元人。少負雋才，與兄師軾稱「金陵二蔣」。清光緒十八年初，應臺灣...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">07</td>
-                    <td>第七種</td>
-                    <td>東槎紀略</td>
-                    <td>姚瑩</td>
-                    <td>1957</td>
-                    <td>本書(一冊一二六面七五、六００字)凡五卷，姚瑩撰。瑩字石甫，號明叔，晚號展和；安徽桐城人，進士。清嘉慶二十四年，任臺灣海防同知。道光元年...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">08</td>
-                    <td>第八種</td>
-                    <td>東瀛紀事</td>
-                    <td>林豪</td>
-                    <td>1957</td>
-                    <td>本書(一冊六九面四一、四００字)分上下兩卷，林豪撰。豪字卓人，福建同安舉人。清同治元年秋，至臺灣。時彰化戴潮春起事，淡水林占梅奉檄辦...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">09</td>
-                    <td>第九種</td>
-                    <td>蠡測彙鈔</td>
-                    <td>鄧傳安</td>
-                    <td>1958</td>
-                    <td>本書(一冊六四面三八、四００字)不分卷，鄧傳安撰。傳安字鹿耕，號盱原，又號尗邍；江西浮梁人。清嘉慶乙丑(十年)，第進士。道光二年，由閩縣...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">10</td>
-                    <td>第一○種</td>
-                    <td>赤崁集</td>
-                    <td>孫元衡</td>
-                    <td>1958</td>
-                    <td>本書(一冊八三面四九、八００字)分四卷，孫元衡撰。元衡字湘南，安徽桐城貢生。清康熙四十四年，歷官至臺灣同知；嘗數攝諸羅篆，並署府符。至...</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
+                </form>
+              </div>
+              <!-- Pagination end-->
+              <div class="table_list ">
+                <table>
+                  <!-- 無障礙 caption 標題預設隱藏 -->
+                  <caption>
+                    無障礙表格標題
+                    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+                    <!-- <span class="summary">表格摘要</span> -->
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>序號</th>
+                      <th>文叢號</th>
+                      <th>書刊名</th>
+                      <th>作者</th>
+                      <th>出版年</th>
+                      <th width="60%">提要節錄</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="num">01</td>
+                      <td>第一種</td>
+                      <td><a href="#">臺灣割據志</a></td>
+                      <td>川口長孺</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊八六面五一、六００字)不分卷，日人川口長孺撰。原著係日本秘閣所藏抄本，今據再抄本排印。書中首述臺灣之風土及先住民習俗，次原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">02</td>
+                      <td>第二種</td>
+                      <td><a href="#">東瀛識略</a></td>
+                      <td>丁紹儀</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊一一三面六七、八００字)分八卷，無錫丁紹儀撰。據「自序」，清道光二十七年(丁未)秋渡臺，嘗佐臺灣道仝卜年幕。在臺勾留八閱月，凡原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">03</td>
+                      <td>第三種</td>
+                      <td><a href="#">小琉球漫誌</a></td>
+                      <td>朱仕玠</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊一０二面六一、二００字)凡十卷，朱仕玠撰。士玠字璧峰，號筠園；福建邵武建寧人。生於清康熙末年，與弟仕琇分以詩、古文名於世。年原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">04</td>
+                      <td>第四種</td>
+                      <td><a href="#">臺海使槎錄</a></td>
+                      <td>黃叔璥</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊一七七面一０六、二００字)凡八卷，前四卷「赤崁筆談」、次三卷「番俗六考」、末一卷「番俗雜記」；黃叔璥撰。叔璥字玉圃，號篤齋</td>
+                    </tr>
+                    <tr>
+                      <td class="num">05</td>
+                      <td>第五種</td>
+                      <td><a href="#">臺灣鄭氏紀事</a></td>
+                      <td>川口長孺</td>
+                      <td>1958</td>
+                      <td class="aLeft limitnumber">本書(一冊七八面四六、八００字)分上中下三卷，與第一種「臺灣割據志」同為日人川口長孺撰。按本書所述，起自日本慶長十七年明萬曆四十原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">06</td>
+                      <td>第六種</td>
+                      <td><a href="#">臺游日記</a></td>
+                      <td>蔣師轍</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊一四一面八四、六００字)分四卷，蔣師轍撰。師轍字紹由，江蘇上元人。少負雋才，與兄師軾稱「金陵二蔣」。清光緒十八年初，應臺灣原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">07</td>
+                      <td>第七種</td>
+                      <td><a href="#">東槎紀略</a></td>
+                      <td>姚瑩</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊一二六面七五、六００字)凡五卷，姚瑩撰。瑩字石甫，號明叔，晚號展和；安徽桐城人，進士。清嘉慶二十四年，任臺灣海防同知。道光元年原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">08</td>
+                      <td>第八種</td>
+                      <td><a href="#">東瀛紀事</a></td>
+                      <td>林豪</td>
+                      <td>1957</td>
+                      <td class="aLeft limitnumber">本書(一冊六九面四一、四００字)分上下兩卷，林豪撰。豪字卓人，福建同安舉人。清同治元年秋，至臺灣。時彰化戴潮春起事，淡水林占梅奉檄辦原著係日本秘閣所藏抄本，今據再抄本排印。原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">09</td>
+                      <td>第九種</td>
+                      <td><a href="#">蠡測彙鈔</a></td>
+                      <td>鄧傳安</td>
+                      <td>1958</td>
+                      <td class="aLeft limitnumber">本書(一冊六四面三八、四００字)不分卷，鄧傳安撰。傳安字鹿耕，號盱原，又號尗邍；江西浮梁人。清嘉慶乙丑(十年)，第進士。道光二年，由閩縣原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                    <tr>
+                      <td class="num">10</td>
+                      <td>第一○種</td>
+                      <td><a href="#">赤崁集</a></td>
+                      <td>孫元衡</td>
+                      <td>1958</td>
+                      <td class="aLeft limitnumber">本書(一冊八三面四九、八００字)分四卷，孫元衡撰。元衡字湘南，安徽桐城貢生。清康熙四十四年，歷官至臺灣同知；嘗數攝諸羅篆，並署府符。至原著係日本秘閣所藏抄本，今據再抄本排印。</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
                         </select>
-                      </label>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
+              <!-- Pagination end-->
             </div>
-            <!-- Pagination end-->
           </section>
           <!-- SP End -->
 

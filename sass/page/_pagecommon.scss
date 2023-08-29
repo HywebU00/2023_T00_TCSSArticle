@@ -1,6 +1,16 @@
+.innercontent {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 26px 0px;
+  padding: 30px;
+  box-sizing: border-box;
+  .searchgroup {
+    box-shadow: none;
+    background-color: #fff;
+  }
+}
 // 瀏覽模式
 .browseMode {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   ul {
     display: flex;
     justify-content: flex-end;
@@ -12,7 +22,7 @@
       a {
         display: block;
         padding: 0.5em 1em;
-        background-color: $color-gray;
+        background-color: $aCutover;
         color: #fff;
         transition: 0.5s;
         &.active {
@@ -29,33 +39,77 @@
 }
 // 報刊項目
 .newspaperProject {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
+
     li {
-      margin-right: 8px;
-      font-size: 1.25em;
+      flex: 0 0 auto;
+      margin-right: 1em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      background-image: linear-gradient(to top, #e3e3e3, #fff);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      @include screen('tablet') {
+        flex: 1 1 auto;
+      }
+      @include screen('xs_mobile') {
+        flex: 1 1 auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-right: 0;
+      }
+      &:hover {
+        text-decoration: none;
+        background-image: linear-gradient(to top, #e3e7c0, #fff);
+      }
+      &.active {
+        background-image: linear-gradient(to top, #e3e7c0, #fff);
+        a {
+          .newstitle {
+            color: darken($color: $primaryColor, $amount: 5);
+          }
+          .issue_period {
+            span {
+              color: darken($color: $primaryColor, $amount: 5);
+            }
+          }
+        }
+      }
       a {
         display: block;
-        padding: 1em 1em;
-        background-color: $color-gray;
-        color: #fff;
-        transition: 0.5s;
         text-align: center;
-        line-height: 1.6;
-        span {
-          display: block;
+        position: relative;
+        padding: 10px 25px 10px;
+        .newstitle {
+          font-size: 1.562rem;
+          font-family: $fontFamilymptitle;
+          color: #7a7a7a;
+          margin: 0 0 10px;
+          line-height: 1.2em;
         }
-        &.active {
-          background-color: $secondaryColor;
-          color: #fff;
+        .issue_period {
+          span {
+            color: #7a7a7a;
+            padding: 0px 10px;
+            margin: 0;
+            font-size: 1rem;
+            display: inline-block;
+          }
         }
         &:hover {
-          text-decoration: none;
-          background-color: darken($color: $color-gray, $amount: 10);
+          .newstitle {
+            color: darken($color: $primaryColor, $amount: 5);
+          }
+          .issue_period {
+            span {
+              color: darken($color: $primaryColor, $amount: 5);
+            }
+          }
         }
       }
     }
@@ -68,9 +122,13 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 2em;
     .years {
-      font-size: 1.5em;
+      font-size: 1.25rem;
       margin-bottom: 1em;
       font-weight: bolder;
+      color: #282727;
+      span {
+        font-size: 1.875rem;
+      }
     }
     ul {
       margin: 0;
@@ -81,15 +139,17 @@
       flex-wrap: wrap;
       li {
         margin-right: 8px;
+        margin-bottom: 8px;
         a {
           display: block;
-          padding: 0.5em 1em;
-          background-color: #ddd;
-          color: $color-word;
-          border-radius: 5px;
-          &:hover {
+          padding: 0.4em 1.6em;
+          background-color: $aCutover;
+          color: #fff;
+          border-radius: 2px;
+          &:hover,
+          &.active {
             text-decoration: none;
-            background-color: $lightColor;
+            background-color: $primaryColor;
             color: #fff;
           }
         }
@@ -108,9 +168,9 @@
     padding: 1.5em 1.5em 1.5em 3em;
     margin-bottom: 1em;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: #fff;
+    // border-radius: 10px;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    // background-color: #fff;
     .num {
       position: absolute;
       left: 0;
@@ -133,12 +193,14 @@
 }
 // 檢索查詢按鈕
 .searchquery_btn {
-  button.btn-normal {
+  button {
     width: 100%;
     margin: 0;
     border-radius: 0;
     border: none !important;
     padding: 0.5em;
+    color: #fff !important;
+    background: $primaryColor !important;
     &.close {
       span {
         background-image: url('../images/retrieve_del2.png');
@@ -146,13 +208,15 @@
     }
     span {
       padding: 0 0 0 30px;
-      background-image: url('../images/retrieve_add.png');
+      background-image: url('../images/retrieve_add2.png');
       background-repeat: no-repeat;
       background-position: 0 center;
+      font-size: 1.125em;
     }
   }
   + .searchgroup {
     display: none;
+    background-color: #f8f8f4;
   }
 }
 // 檢索結果
@@ -163,7 +227,7 @@
   .narrowquery_btn {
     display: none;
     position: absolute;
-    left: -50px;
+    left: -80px;
     top: 0;
     z-index: 3;
     width: 1.5em;
@@ -171,7 +235,7 @@
       display: block;
     }
     @include screen('xs_mobile') {
-      left: -30px;
+      left: -60px;
     }
     a {
       color: #fff;
@@ -202,40 +266,34 @@
     }
   }
   .leftblock {
-    flex: 0 0 none;
+    flex: 0 0 auto;
     flex-basis: 250px;
     max-width: 250px;
     margin-right: 1em;
     @include screen('tablet') {
       position: absolute;
-      left: calc(-250px - 50px);
+      left: calc(-250px - 80px);
       top: 0;
       bottom: 0;
       width: 240px;
       transition: 0.5s;
       z-index: 2;
       &.open {
-        left: 0em;
+        left: -30px;
       }
     }
     @include screen('xs_mobile') {
-      left: calc(-250px - 30px);
-      &.open {
-        left: 0em;
-      }
-    }
-    @media screen and (max-width: 480px) {
       flex-basis: 100%;
       max-width: 100%;
       width: 100%;
-      left: calc(-100% - 30px);
+      left: calc(-100% - 60px);
       margin-right: 0;
       &.open {
         left: 0em;
       }
     }
     .sortlist {
-      background-color: #eee;
+      background-color: #f8f8f4;
       padding-bottom: 0.5em;
       .sort_title {
         background-color: $primaryColor;
@@ -246,9 +304,9 @@
       .content {
         padding: 1em 1em 0;
         .sectitle {
-          color: $secondaryColor;
-          font-weight: bolder;
-          font-size: 1.125rem;
+          color: $primaryColor;
+
+          font-size: 1rem;
           margin-bottom: 8px;
         }
         p {
@@ -282,53 +340,47 @@
         }
       }
       ul {
-        margin: 1em;
+        margin: 1em 1em 0.5em;
         padding: 0;
         list-style-type: none;
         li {
           a {
             display: block;
             padding: 5px 0;
-            border-bottom: 1px dashed #ccc;
+
             span {
               margin-left: 5px;
             }
+            &:hover {
+              text-decoration: underline;
+            }
           }
-          &:nth-child(n + 4) {
+          &:nth-child(n + 6) {
             display: none;
           }
         }
       }
       .more {
-        margin: 0 1em 0 0;
+        margin: 0 1em 0.5em;
+        justify-content: flex-start;
         a {
           display: block;
           color: $primaryColor;
           position: relative;
-          padding-right: 30px;
-          text-align: right;
+          padding-right: 20px;
+          text-align: left;
           transition: 0.5s;
+          font-size: 1rem;
           &.close {
-            &:before {
-              width: 16px;
-              transform: rotate(-90deg);
-              right: 7px;
-            }
+            padding-right: 30px;
             &:after {
               transform: rotate(-45deg);
-              top: 5px;
+              top: 9px;
               right: 10px;
             }
           }
           &:before {
-            content: '';
-            width: 20px;
-            height: 2px;
-            background-color: $primaryColor;
-            position: absolute;
-            right: 0;
-            top: 10px;
-            transition: 0.2s;
+            display: none;
           }
           &:after {
             content: '';
@@ -337,11 +389,12 @@
             border: 2px solid $primaryColor;
             border-bottom: none;
             border-left: none;
-            transform: rotate(45deg);
+            transform: rotate(135deg);
             position: absolute;
             right: 0;
-            top: 6px;
+            top: 5px;
             transition: 0.2s;
+            background-image: none;
           }
           &:hover {
             text-decoration: none;
@@ -352,37 +405,61 @@
           }
         }
       }
+      .otherbtn {
+        width: 100%;
+        padding: 0.3em 1.25em;
+      }
     }
   }
   .rightblock {
     flex: 1 1 auto;
-
+    // 結果
     .resultlist_group {
       // 全選
       .selectall {
         display: flex;
-        padding: 0.5em 1em;
-        border: 1px solid #ccc;
-        margin-bottom: 1em;
+        padding: 0 1em;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0.5em;
         align-items: center;
         background-color: #fff;
+        @include screen('xs_mobile') {
+          flex-wrap: wrap;
+          padding: 0;
+        }
         .project_options {
           flex: 0 0 auto;
-          flex-basis: 150px;
-          max-width: 150px;
-
+          flex-basis: 130px;
+          max-width: 130px;
+          @include screen('xs_mobile') {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin-bottom: 0.5em;
+          }
           label {
             display: flex;
             align-items: center;
+            input {
+              margin-right: 0.5em;
+            }
           }
         }
         .resultcontent {
           flex: 1 1 auto;
           display: flex;
           align-items: center;
-
+          justify-content: space-between;
+          @include screen('xs_mobile') {
+            padding-left: 0.5em;
+          }
           .checkedword {
             margin-right: 2em;
+            em {
+              font-style: normal;
+              color: #c33c00;
+              font-size: 1.25rem;
+              padding: 0 0.5em;
+            }
           }
           button.btn-submit {
             padding-left: 1em;
@@ -393,18 +470,29 @@
       // 結果條列
       .resultlist {
         display: flex;
-        padding: 1em;
-        border: 1px solid #ccc;
-        margin-bottom: 1em;
+        padding: 0.5em 1em 1em;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0.5em;
         background-color: #fff;
+        @include screen('xs_mobile') {
+          flex-wrap: wrap;
+          padding: 0.5em 0em 1em 0;
+        }
         .project_options {
           flex: 0 0 auto;
-          flex-basis: 90px;
-          max-width: 90px;
-
+          flex-basis: 80px;
+          max-width: 80px;
+          @include screen('xs_mobile') {
+            flex-basis: 100%;
+            max-width: 100%;
+            margin-bottom: 0.5em;
+          }
           label {
             display: flex;
             align-items: center;
+            input {
+              margin-right: 0.5em;
+            }
           }
         }
         .resultcontent {
@@ -430,10 +518,164 @@
                 margin: 0;
               }
               a {
-                color: $primaryColor;
+                color: #c33c00;
                 &:hover {
                   text-decoration: underline;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+    // 詳細區塊
+    .detailed_group {
+      // 按鈕選項
+      .buttonoptions {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0.5em;
+        align-items: center;
+        .backbtn {
+          margin-right: 0.5em;
+          a {
+            display: block;
+            padding: 0.3em 1.25em 0.3em 2em;
+            color: #fff;
+            background-color: $primaryColor;
+            border-radius: 0.2em;
+            position: relative;
+            &:before {
+              content: '';
+              border: 2px solid #fff;
+              width: 8px;
+              height: 8px;
+              border-right: none;
+              border-bottom: none;
+              position: absolute;
+              left: 15px;
+              top: 12px;
+              transform: rotate(-45deg);
+              transition: 0.5s;
+            }
+            &:hover {
+              background-color: darken($color: $primaryColor, $amount: 10);
+              &:before {
+                left: 12px;
+              }
+            }
+          }
+        }
+        .btnlist {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: flex;
+          li {
+            margin-right: 0.5em;
+            a {
+              display: block;
+              padding: 0.3em 1.25em;
+              color: #fff;
+              background-color: $color-gray;
+              border-radius: 0.2em;
+              position: relative;
+              transition: 0.5s;
+              &:hover {
+                background-color: darken($color: $color-gray, $amount: 10);
+              }
+            }
+            &.active {
+              a {
+                background-color: $primaryColor;
+                &:hover {
+                  background-color: darken($color: $primaryColor, $amount: 10);
+                }
+              }
+            }
+          }
+        }
+      }
+      // 詳細資料
+      .detailed_information {
+        .fullmark_outdiv {
+          padding: 5px;
+          border: 1px solid #ddd;
+          margin-bottom: 1em;
+          font-size: 1.125rem;
+          &:hover {
+            background-color: #f7f7f5;
+          }
+          .fullmark_ab {
+            padding: 1em;
+            line-height: 1.7;
+            .dispbrfont {
+              font-weight: bolder;
+              padding: 0.2em 0;
+              display: inline-block;
+            }
+            .smallabs1 {
+              font-size: 1rem;
+              color: $color-red;
+            }
+          }
+          .numpages {
+            display: flex;
+            justify-content: flex-end;
+            span {
+              padding: 0.2em 1em;
+              background-color: #b9b7ab;
+              color: #fff;
+            }
+          }
+        }
+        .pagebutton {
+          display: flex;
+          justify-content: center;
+          button {
+            margin: 0 1em;
+          }
+          .prebtn {
+            padding: 0.2em 1.25em 0.3em 2em;
+            position: relative;
+            &:before {
+              content: '';
+              border: 2px solid #fff;
+              width: 8px;
+              height: 8px;
+              border-right: none;
+              border-bottom: none;
+              position: absolute;
+              left: 15px;
+              top: 10px;
+              transform: rotate(-45deg);
+              transition: 0.5s;
+            }
+            &:hover {
+              &:before {
+                left: 12px;
+              }
+            }
+          }
+          .nextbtn {
+            padding: 0.2em 2em 0.3em 1.25em;
+            position: relative;
+            &:before {
+              content: '';
+              border: 2px solid #fff;
+              width: 8px;
+              height: 8px;
+              border-left: none;
+              border-bottom: none;
+              position: absolute;
+              right: 15px;
+              top: 10px;
+              transform: rotate(45deg);
+              transition: 0.5s;
+            }
+            &:hover {
+              &:before {
+                right: 12px;
               }
             }
           }

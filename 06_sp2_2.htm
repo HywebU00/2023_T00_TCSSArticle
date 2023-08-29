@@ -109,212 +109,223 @@
             </div>
           </div>
           <!-- h2節點 -->
-          <h2 class="title">新聞報刊瀏覽</h2>
+          <h2 class="title"><span>新聞報刊瀏覽</span></h2>
           <!-- SP Start -->
           <section class="sp">
-            <!-- 瀏覽模式start -->
-            <div class="browseMode">
-              <ul>
-                <li><a href="#" class="active">月曆模式</a></li>
-                <li><a href="#">清單模式</a></li>
-              </ul>
-            </div>
-            <!-- 瀏覽模式end -->
-            <!-- 報刊項目start -->
-            <div class="newspaperProject">
-              <ul>
-                <li><a href="#">臺灣民報<span>1923-1930</span></a></li>
-                <li><a href="#" class="active">臺灣新民報<span>1930-1941</span></a></li>
-                <li><a href="#">興南新聞<span>1941-1944</span></a></li>
-              </ul>
-            </div>
-            <!-- 報刊項目end -->
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
+            <div class="innercontent">
+              <!-- 瀏覽模式start -->
+              <div class="browseMode">
+                <ul>
+                  <li><a href="#">月曆模式</a></li>
+                  <li><a href="#" class="active">清單模式</a></li>
+                </ul>
+              </div>
+              <!-- 瀏覽模式end -->
+              <!-- 報刊項目start -->
+              <div class="newspaperProject">
+                <ul>
+                  <li><a href="#">
+                      <div class="newstitle">臺灣民報</div>
+                      <div class="issue_period"><span>1923-1930</span></div>
+                    </a></li>
+                  <li class="active"><a href="#">
+                      <div class="newstitle">臺灣新民報</div>
+                      <div class="issue_period"><span>1930-1933</span><span>1938-1941</span></div>
+                    </a></li>
+                  <li><a href="#">
+                      <div class="newstitle">興南新聞</div>
+                      <div class="issue_period"><span>1941-1944</span></div>
+                    </a></li>
+                </ul>
+              </div>
+              <!-- 報刊項目end -->
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
                         </select>
-                      </label>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
-            </div>
-            <!-- Pagination end-->
-            <div class="table_list">
-              <table>
-                <!-- 無障礙 caption 標題預設隱藏 -->
-                <caption>
-                  無障礙表格標題
-                  <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
-                  <!-- <span class="summary">表格摘要</span> -->
-                </caption>
-                <thead>
-                  <tr>
-                    <th>序號</th>
-                    <th>書刊名</th>
-                    <th>原刊年月</th>
-                    <th>提要節錄</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="num">01</td>
-                    <td>臺灣新民報1932年1月</td>
-                    <td>昭和5年1月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">02</td>
-                    <td>臺灣新民報1932年2月</td>
-                    <td>昭和5年2月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">03</td>
-                    <td>臺灣新民報1932年3月</td>
-                    <td>昭和5年3月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">04</td>
-                    <td>臺灣新民報1932年4月</td>
-                    <td>昭和5年4月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">05</td>
-                    <td>臺灣新民報1932年5月</td>
-                    <td>昭和5年5月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">06</td>
-                    <td>臺灣新民報1932年6月</td>
-                    <td>昭和5年6月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">07</td>
-                    <td>臺灣新民報1932年7月</td>
-                    <td>昭和5年7月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">08</td>
-                    <td>臺灣新民報1932年8月</td>
-                    <td>昭和5年8月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">09</td>
-                    <td>臺灣新民報1932年9月</td>
-                    <td>昭和5年9月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                  <tr>
-                    <td class="num">10</td>
-                    <td>臺灣新民報1932年10月</td>
-                    <td>昭和5年10月</td>
-                    <td>提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄...</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
+                </form>
+              </div>
+              <!-- Pagination end-->
+              <div class="table_list">
+                <table>
+                  <!-- 無障礙 caption 標題預設隱藏 -->
+                  <caption>
+                    無障礙表格標題
+                    <!-- 若表格內容複雜，可以補充摘要(summary)來加強說明表格內容，但 內容不要與標題重複 -->
+                    <!-- <span class="summary">表格摘要</span> -->
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>序號</th>
+                      <th>書刊名</th>
+                      <th>原刊年月</th>
+                      <th width="60%">提要節錄</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="num">01</td>
+                      <td>臺灣新民報1932年1月</td>
+                      <td>昭和5年1月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">02</td>
+                      <td>臺灣新民報1932年2月</td>
+                      <td>昭和5年2月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">03</td>
+                      <td>臺灣新民報1932年3月</td>
+                      <td>昭和5年3月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">04</td>
+                      <td>臺灣新民報1932年4月</td>
+                      <td>昭和5年4月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">05</td>
+                      <td>臺灣新民報1932年5月</td>
+                      <td>昭和5年5月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要</td>
+                    </tr>
+                    <tr>
+                      <td class="num">06</td>
+                      <td>臺灣新民報1932年6月</td>
+                      <td>昭和5年6月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">07</td>
+                      <td>臺灣新民報1932年7月</td>
+                      <td>昭和5年7月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">08</td>
+                      <td>臺灣新民報1932年8月</td>
+                      <td>昭和5年8月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提</td>
+                    </tr>
+                    <tr>
+                      <td class="num">09</td>
+                      <td>臺灣新民報1932年9月</td>
+                      <td>昭和5年9月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄</td>
+                    </tr>
+                    <tr>
+                      <td class="num">10</td>
+                      <td>臺灣新民報1932年10月</td>
+                      <td>昭和5年10月</td>
+                      <td class="aLeft limitnumber">提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提要節錄提</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
                         </select>
-                      </label>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
+              <!-- Pagination end-->
             </div>
-            <!-- Pagination end-->
           </section>
           <!-- SP End -->
 

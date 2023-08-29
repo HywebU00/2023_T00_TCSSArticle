@@ -1,12 +1,80 @@
 @charset "utf-8";
 // 文章標題
-h1.title,
+
+// h2.title {
+//   font-size: 2em;
+//   line-height: 1.25em;
+//   margin: 0.5em 0;
+//   padding-bottom: 0.3em;
+//   border-bottom: 3px solid #999;
+// }
+
 h2.title {
-  font-size: 2em;
-  line-height: 1.25em;
-  margin: 0.5em 0;
-  padding-bottom: 0.3em;
-  border-bottom: 3px solid #999;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 1.5em;
+  width: 80%;
+  @include screen('mobile') {
+    width: 100%;
+  }
+  &:before {
+    content: '';
+    width: 50%;
+    height: 10px;
+    background: url('../images/advancedsearch_title_leftbg.png') no-repeat left top;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    width: 50%;
+    height: 10px;
+    background: url('../images/advancedsearch_title2_rightbg.png') no-repeat right top;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    z-index: 1;
+  }
+  span {
+    @extend %mptitle;
+    font-size: 2.25rem;
+    line-height: 1.25em;
+    color: $primaryColor;
+    position: relative;
+    z-index: 2;
+    padding: 0 22px;
+    background-image: url('../images/innerpagebg.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    &:before {
+      content: '';
+      width: 34px;
+      height: 10px;
+      background: url('../images/advancedsearch_title_rightbg.png') no-repeat left top;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -5px;
+      margin-left: -33px;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      width: 34px;
+      height: 10px;
+      background: url('../images/advancedsearch_title2_leftbg.png') no-repeat left top;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      margin-right: -33px;
+      z-index: 1;
+    }
+  }
 }
 
 // .tt{ color: #222; }

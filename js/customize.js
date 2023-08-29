@@ -208,13 +208,13 @@ $(function () {
 
   // 後分類
   var _sortlist = $('.searchresults_block .sortlist');
-  var i = 3; //不隱藏的個數
+  var i = 5; //不隱藏的個數
 
   _sortlist.each(function () {
     var _slideItem = $(this).find('li').slice(i);
     var _more = $(this).find('.more>a');
     var moreText = _more.text();
-    var altText = '收合';
+    var altText = '顯示收合';
 
     _more.click(function () {
       if (_slideItem.is(':hidden')) {

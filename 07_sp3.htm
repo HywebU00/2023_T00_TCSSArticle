@@ -108,54 +108,55 @@
             </div>
           </div>
           <!-- h2節點 -->
-          <h2 class="title">全文檢索</h2>
+          <h2 class="title"><span>全文檢索</span></h2>
           <!-- SP Start -->
           <section class="sp">
-            <!-- 檢索查詢start -->
-            <div class="searchgroup">
-              <div class="flex-form form_grid">
-                <div class="form_grp">
-                  <div class="form_content formflex">
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <button type="button" class="btn-submit">查詢</button>
+            <div class="innercontent">
+              <!-- 檢索查詢start -->
+              <div class="searchgroup">
+                <div class="flex-form form_grid">
+                  <div class="form_grp">
+                    <div class="form_content formflex">
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <button type="button" class="btn-submit">查詢</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- 進階條件篩選start -->
-              <div class="title"><span>進階查詢</span></div>
+                <!-- 進階條件篩選start -->
+                <div class="title"><span>進階查詢</span></div>
 
-              <div class="flex-form form_grid">
-                <div class="form_grp">
-                  <div class="form_content  formflex">
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <select id="selectSample" name="">
-                      <option value="">不限欄位</option>
-                      <option value="">書目資料</option>
-                      <option value="">章節名稱</option>
-                      <option value="">全文內容</option>
-                    </select>
-                    <button type="button" class="add">增加</button>
+                <div class="flex-form form_grid">
+                  <div class="form_grp">
+                    <div class="form_content  formflex">
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <select id="selectSample" name="">
+                        <option value="">不限欄位</option>
+                        <option value="">書目資料</option>
+                        <option value="">章節名稱</option>
+                        <option value="">全文內容</option>
+                      </select>
+                      <button type="button" class="add">增加</button>
+                    </div>
                   </div>
-                </div>
-                <div class="form_grp">
-                  <div class="form_content  formflex">
-                    <select id="selectSample" name="">
-                      <option value="">AND</option>
-                      <option value="">OR</option>
-                      <option value="">NOT</option>
-                    </select>
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <select id="selectSample" name="">
-                      <option value="">不限欄位</option>
-                      <option value="">書目資料</option>
-                      <option value="">章節名稱</option>
-                      <option value="">全文內容</option>
-                    </select>
-                    <button type="button" class="del">刪除</button>
+                  <div class="form_grp">
+                    <div class="form_content  formflex">
+                      <select id="selectSample" name="">
+                        <option value="">AND</option>
+                        <option value="">OR</option>
+                        <option value="">NOT</option>
+                      </select>
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <select id="selectSample" name="">
+                        <option value="">不限欄位</option>
+                        <option value="">書目資料</option>
+                        <option value="">章節名稱</option>
+                        <option value="">全文內容</option>
+                      </select>
+                      <button type="button" class="del">刪除</button>
+                    </div>
                   </div>
-                </div>
 
-                <!-- <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                  <!-- <div class="form_grp" role="group" aria-labelledby="fake-legend">
                             <label for="phone" class="form_title">查詢模式：</label>
                             <div class="form_content" id="fake-legend">
                               <div class="radio_grp form_inline">
@@ -164,7 +165,7 @@
                               </div>
                             </div>
                           </div> -->
-                <!-- <div class="form_grp">
+                  <!-- <div class="form_grp">
                             <label for="phone" class="form_title">報刊月份：</label>
                             <div class="form_content  pressblock ">
                               <label for="">類型
@@ -225,44 +226,45 @@
                                 </select></label>
                             </div>
                           </div> -->
-                <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                  <label class="form_title">查詢範圍：</label>
-                  <div class="form_content" id="fake-legend">
-                    <div class="check_grp form_inline">
-                      <div>
-                        <label> <input type="checkbox" name="" value="" title="全部文獻叢刊" checked="" />全部文獻叢刊</label>
-                        <label> <input type="checkbox" name="" value="" title="檔案文獻" checked="" />檔案文獻</label>
-                        <label> <input type="checkbox" name="" value="" title="方志" />方志</label>
-                      </div>
-                      <div>
-                        <label> <input type="checkbox" name="" value="" title="全部報刊
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label class="form_title">查詢範圍：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="check_grp form_inline">
+                        <div>
+                          <label> <input type="checkbox" name="" value="" title="全部文獻叢刊" checked="" />全部文獻叢刊</label>
+                          <label> <input type="checkbox" name="" value="" title="檔案文獻" checked="" />檔案文獻</label>
+                          <label> <input type="checkbox" name="" value="" title="方志" />方志</label>
+                        </div>
+                        <div>
+                          <label> <input type="checkbox" name="" value="" title="全部報刊
                                       " />全部新聞報刊</label>
-                        <label> <input type="checkbox" name="" value="" title="臺灣民報" />臺灣民報</label>
-                        <label> <input type="checkbox" name="" value="" title="臺灣新民報" />臺灣新民報</label>
-                        <label> <input type="checkbox" name="" value="" title="興南新聞" />興南新聞</label>
+                          <label> <input type="checkbox" name="" value="" title="臺灣民報" />臺灣民報</label>
+                          <label> <input type="checkbox" name="" value="" title="臺灣新民報" />臺灣新民報</label>
+                          <label> <input type="checkbox" name="" value="" title="興南新聞" />興南新聞</label>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                  <label class="form_title">報刊時間：</label>
-                  <div class="form_content" id="fake-legend">
-                    <div class="datepick">
-                      <input name="" type="text" value="" class="calendar" placeholder="開始日期" title="開始日期" />
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label class="form_title">報刊時間：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="datepick">
+                        <input name="" type="text" value="" class="calendar" placeholder="開始日期" title="開始日期" />
+                      </div>
+                      <div class="datepick">
+                        <input name="" type="text" value="" class="calendar" placeholder="結束日期" title="結束日期" />
+                      </div>
+                      <div class="remark">(格式請輸入 1938/01)</div>
                     </div>
-                    <div class="datepick">
-                      <input name="" type="text" value="" class="calendar" placeholder="結束日期" title="結束日期" />
-                    </div>
-                    <div class="remark">(格式請輸入 1938/01)</div>
+                  </div>
+                  <div class="btn_grp form_inline">
+                    <button type="button" class="btn btnSubmit"><span>查詢</span></button>
                   </div>
                 </div>
-                <div class="btn_grp form_inline">
-                  <button type="button" class="btn btnSubmit"><span>查詢</span></button>
-                </div>
+                <!-- 進階條件篩選end -->
               </div>
-              <!-- 進階條件篩選end -->
+              <!-- 檢索查詢end -->
             </div>
-            <!-- 檢索查詢end -->
           </section>
           <!-- SP End -->
 

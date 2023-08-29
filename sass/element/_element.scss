@@ -10,11 +10,20 @@
   text-decoration: none;
   position: fixed;
   bottom: 60px;
-  right: calc(50% - 600px);
+  right: calc(50% - 560px);
   transition: 0.3s ease-out;
   display: none;
   z-index: 99999999;
   text-indent: -999999px;
+  @media (max-width: 1200px) {
+    right: 40px;
+  }
+  @include screen('tablet') {
+    right: 50px;
+  }
+  @include screen('xs_mobile') {
+    right: 30px;
+  }
   &:before {
     content: '';
     width: 1px;

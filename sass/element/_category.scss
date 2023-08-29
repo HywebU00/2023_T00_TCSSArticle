@@ -11,13 +11,13 @@
     }
   }
   a {
-    border: 1px solid #ccc;
+    border: 1px solid $aCutover;
     padding: 0.4em 1em;
     display: block;
-    color: #333;
+    color: #fff;
     box-sizing: border-box;
-    border-radius: 4px;
-    background-color: #fff;
+    border-radius: 2px;
+    background-color: $aCutover;
     &:hover,
     &:focus {
       color: #fff;
@@ -27,10 +27,12 @@
     }
     &.active {
       color: #fff;
-      @include gradient(darken($primaryColor, 0), darken($primaryColor, 15), vertical);
+      background: $primaryColor;
+      border: 1px solid $primaryColor;
     }
     span {
-      font-size: 0.813em;
+      padding: 0 5px;
+
       &:before {
         content: '(';
         display: inline-block;

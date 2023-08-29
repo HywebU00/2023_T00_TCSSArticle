@@ -108,55 +108,56 @@
             </div>
           </div>
           <!-- h2節點 -->
-          <h2 class="title">全文檢索</h2>
+          <h2 class="title"><span>全文檢索</span></h2>
           <!-- SP Start -->
           <section class="sp">
-            <!-- 檢索查詢start -->
-            <div class="searchquery_btn"><button type="button" class="btn-normal"><span>顯示查詢</span></button></div>
-            <div class="searchgroup">
-              <div class="flex-form form_grid">
-                <div class="form_grp">
-                  <div class="form_content formflex">
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <button type="button" class="btn-submit">查詢</button>
+            <div class="innercontent">
+              <!-- 檢索查詢start -->
+              <div class="searchquery_btn"><button type="button"><span>顯示查詢</span></button></div>
+              <div class="searchgroup">
+                <div class="flex-form form_grid">
+                  <div class="form_grp">
+                    <div class="form_content formflex">
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <button type="button" class="btn-submit">查詢</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- 進階條件篩選start -->
-              <div class="title"><span>進階查詢</span></div>
+                <!-- 進階條件篩選start -->
+                <div class="title"><span>進階查詢</span></div>
 
-              <div class="flex-form form_grid">
-                <div class="form_grp">
-                  <div class="form_content  formflex">
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <select id="selectSample" name="">
-                      <option value="">不限欄位</option>
-                      <option value="">書目資料</option>
-                      <option value="">章節名稱</option>
-                      <option value="">全文內容</option>
-                    </select>
-                    <button type="button" class="add">增加</button>
+                <div class="flex-form form_grid">
+                  <div class="form_grp">
+                    <div class="form_content  formflex">
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <select id="selectSample" name="">
+                        <option value="">不限欄位</option>
+                        <option value="">書目資料</option>
+                        <option value="">章節名稱</option>
+                        <option value="">全文內容</option>
+                      </select>
+                      <button type="button" class="add">增加</button>
+                    </div>
                   </div>
-                </div>
-                <div class="form_grp">
-                  <div class="form_content  formflex">
-                    <select id="selectSample" name="">
-                      <option value="">AND</option>
-                      <option value="">OR</option>
-                      <option value="">NOT</option>
-                    </select>
-                    <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
-                    <select id="selectSample" name="">
-                      <option value="">不限欄位</option>
-                      <option value="">書目資料</option>
-                      <option value="">章節名稱</option>
-                      <option value="">全文內容</option>
-                    </select>
-                    <button type="button" class="del">刪除</button>
+                  <div class="form_grp">
+                    <div class="form_content  formflex">
+                      <select id="selectSample" name="">
+                        <option value="">AND</option>
+                        <option value="">OR</option>
+                        <option value="">NOT</option>
+                      </select>
+                      <input name="phone" id="phone" type="text" title="請輸入檢索詞" placeholder="請輸入檢索詞" />
+                      <select id="selectSample" name="">
+                        <option value="">不限欄位</option>
+                        <option value="">書目資料</option>
+                        <option value="">章節名稱</option>
+                        <option value="">全文內容</option>
+                      </select>
+                      <button type="button" class="del">刪除</button>
+                    </div>
                   </div>
-                </div>
 
-                <!-- <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                  <!-- <div class="form_grp" role="group" aria-labelledby="fake-legend">
                             <label for="phone" class="form_title">查詢模式：</label>
                             <div class="form_content" id="fake-legend">
                               <div class="radio_grp form_inline">
@@ -165,7 +166,7 @@
                               </div>
                             </div>
                           </div> -->
-                <!-- <div class="form_grp">
+                  <!-- <div class="form_grp">
                             <label for="phone" class="form_title">報刊月份：</label>
                             <div class="form_content  pressblock ">
                               <label for="">類型
@@ -226,285 +227,313 @@
                                 </select></label>
                             </div>
                           </div> -->
-                <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                  <label class="form_title">查詢範圍：</label>
-                  <div class="form_content" id="fake-legend">
-                    <div class="check_grp form_inline">
-                      <div>
-                        <label> <input type="checkbox" name="" value="" title="全部文獻叢刊" checked="" />全部文獻叢刊</label>
-                        <label> <input type="checkbox" name="" value="" title="檔案文獻" checked="" />檔案文獻</label>
-                        <label> <input type="checkbox" name="" value="" title="方志" />方志</label>
-                      </div>
-                      <div>
-                        <label> <input type="checkbox" name="" value="" title="全部報刊
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label class="form_title">查詢範圍：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="check_grp form_inline">
+                        <div>
+                          <label> <input type="checkbox" name="" value="" title="全部文獻叢刊" checked="" />全部文獻叢刊</label>
+                          <label> <input type="checkbox" name="" value="" title="檔案文獻" checked="" />檔案文獻</label>
+                          <label> <input type="checkbox" name="" value="" title="方志" />方志</label>
+                        </div>
+                        <div>
+                          <label> <input type="checkbox" name="" value="" title="全部報刊
                                       " />全部新聞報刊</label>
-                        <label> <input type="checkbox" name="" value="" title="臺灣民報" />臺灣民報</label>
-                        <label> <input type="checkbox" name="" value="" title="臺灣新民報" />臺灣新民報</label>
-                        <label> <input type="checkbox" name="" value="" title="興南新聞" />興南新聞</label>
+                          <label> <input type="checkbox" name="" value="" title="臺灣民報" />臺灣民報</label>
+                          <label> <input type="checkbox" name="" value="" title="臺灣新民報" />臺灣新民報</label>
+                          <label> <input type="checkbox" name="" value="" title="興南新聞" />興南新聞</label>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="form_grp" role="group" aria-labelledby="fake-legend">
-                  <label class="form_title">報刊時間：</label>
-                  <div class="form_content" id="fake-legend">
-                    <div class="datepick">
-                      <input name="" type="text" value="" class="calendar" placeholder="開始日期" title="開始日期" />
+                  <div class="form_grp" role="group" aria-labelledby="fake-legend">
+                    <label class="form_title">報刊時間：</label>
+                    <div class="form_content" id="fake-legend">
+                      <div class="datepick">
+                        <input name="" type="text" value="" class="calendar" placeholder="開始日期" title="開始日期" />
+                      </div>
+                      <div class="datepick">
+                        <input name="" type="text" value="" class="calendar" placeholder="結束日期" title="結束日期" />
+                      </div>
+                      <div class="remark">(格式請輸入 1938/01)</div>
                     </div>
-                    <div class="datepick">
-                      <input name="" type="text" value="" class="calendar" placeholder="結束日期" title="結束日期" />
-                    </div>
-                    <div class="remark">(格式請輸入 1938/01)</div>
+                  </div>
+                  <div class="btn_grp form_inline">
+                    <button type="button" class="btn btnSubmit"><span>查詢</span></button>
                   </div>
                 </div>
-                <div class="btn_grp form_inline">
-                  <button type="button" class="btn btnSubmit"><span>查詢</span></button>
-                </div>
+                <!-- 進階條件篩選end -->
               </div>
-              <!-- 進階條件篩選end -->
-            </div>
-            <!-- 檢索查詢end -->
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
-                        </select>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- Pagination end-->
-            <!-- 檢索結果start -->
-            <div class="searchresults_block">
-              <!-- 縮限查詢範圍按鈕 -->
-              <div class="narrowquery_btn"><a href="javascript:;">縮限查詢範圍</a></div>
-              <div class="leftblock">
-                <!-- 1 -->
-                <div class="sortlist">
-                  <div class="sort_title">您查詢的條件為</div>
-                  <div class="content">
-                    <div class="sectitle">關鍵字</div>
-                    <p>不限欄位=補助 OR 章節名稱=XXXXX</p>
-                    <div class="sectitle">資料類型</div>
-                    <div class="condition">臺灣新民報<button type="button">關閉</button></div>
-                    <div class="sectitle">書刊名</div>
-                    <div class="condition">臺灣新民報1938年1月<button type="button">關閉</button></div>
-                  </div>
-                </div>
-                <!-- 2 -->
-                <div class="sortlist">
-                  <div class="sort_title">資料類型</div>
-                  <ul>
-                    <li><a href="#">方志<span class="num">(5)</span></a></li>
-                    <li><a href="#">檔案文獻<span class="num">(3)</span></a></li>
-                    <li><a href="#">臺灣民報<span class="num">(4)</span></a></li>
-                    <li><a href="#">興南新聞<span class="num">(11)</span></a></li>
-                  </ul>
-                  <div class="more"><a href="javascript:;">更多</a></div>
-                </div>
-                <!-- 3 -->
-                <div class="sortlist">
-                  <div class="sort_title">書刊名</div>
-                  <ul>
-                    <li><a href="#">清史講義選錄<span class="num">(2)</span></a></li>
-                    <li><a href="#">臺灣遊記<span class="num">(2)</span></a></li>
-                    <li><a href="#">臺灣新民報1938年1月<span class="num">(4)</span></a></li>
-                    <li><a href="#">臺灣新民報1938年2月<span class="num">(3)</span></a></li>
-                  </ul>
-                  <div class="more"><a href="javascript:;">更多</a></div>
-                </div>
-                <!-- 4 -->
-                <div class="sortlist">
-                  <div class="sort_title">出版年</div>
-                  <ul>
-                    <li><a href="#">1938<span class="num">(22)</span></a></li>
-                    <li><a href="#">1939<span class="num">(2)</span></a></li>
-                    <li><a href="#">1941<span class="num">(4)</span></a></li>
-                    <li><a href="#">1943<span class="num">(3)</span></a></li>
-                    <li><a href="#">1944<span class="num">(3)</span></a></li>
-                  </ul>
-                  <div class="more"><a href="javascript:;">更多</a></div>
-                </div>
-                <!--  -->
-              </div>
-              <div class="rightblock">
-                <div class="resultlist_group">
-                  <!-- 全選 -->
-                  <div class="selectall">
-                    <div class="project_options">
-                      <label>
-                        <input type="checkbox" name="" value="">全部勾選 </label>
-                    </div>
-                    <div class="resultcontent">
-                      <div class="checkedword">已勾選七筆</div>
-                      <button type="button" class="btn-submit">匯出</button>
-                    </div>
-                  </div>
-                  <!-- 1 -->
-                  <div class="resultlist">
-                    <div class="project_options">
-                      <label>
-                        <input type="checkbox" name="" value="">1. </label>
-                    </div>
-                    <div class="resultcontent">
-                      <ul>
-                        <li><span class="title">章節名稱：</span><a href="#">第2481號</a></li>
-                        <li class="fulltext"><span>全文節錄：</span>初等教育の國庫<span class="wordred">補助</span>一三十日空路歸任の先例を開いた森岡長官が記者團に語つてゐる通り、時局のために今度の豫算査定が例年になく峻嚴を極め初等教育の國庫補助一三十日空路歸任の</li>
-                        <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
-                        <li><span class="title">作者：</span>吳大廷</li>
-                        <li><span class="title">頁次：</span>1-54</li>
+              <!-- 檢索查詢end -->
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
                       </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                        </select>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pagination end-->
+              <!-- 檢索結果start -->
+              <div class="searchresults_block">
+                <!-- 縮限查詢範圍按鈕 -->
+                <div class="narrowquery_btn"><a href="javascript:;">縮限查詢範圍</a></div>
+                <div class="leftblock">
+                  <!-- 1 -->
+                  <div class="sortlist">
+                    <div class="sort_title">您查詢的條件為</div>
+                    <div class="content">
+                      <div class="sectitle">關鍵字</div>
+                      <p>不限欄位=補助 OR 章節名稱=XXXXX</p>
+                      <div class="sectitle">資料類型</div>
+                      <div class="condition">臺灣新民報<button type="button">關閉</button></div>
+                      <div class="sectitle">書刊名</div>
+                      <div class="condition">臺灣新民報1938年1月<button type="button">關閉</button></div>
                     </div>
                   </div>
                   <!-- 2 -->
-                  <div class="resultlist">
-                    <div class="project_options">
-                      <label>
-                        <input type="checkbox" name="" value="">2. </label>
-                    </div>
-                    <div class="resultcontent">
-                      <ul>
-                        <li><span class="title">章節名稱：</span><a href="#">第2482號</a></li>
-                        <li class="fulltext"><span>全文節錄：</span>價益昂，糴者日益眾。倉穀將罄。余懼民之乏食也，將勸紳耆商賈之有力者，買米<span class="wordred">補助</span>之。捐廉銀五百以為之倡。吳生聞之，歸告其母，願代出金。且曰：事宜價益昂，糴者日益眾。價益昂，糴者日益眾。</li>
-                        <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
-                        <li><span class="title">作者：</span>吳大廷</li>
-                        <li><span class="title">頁次：</span>1-54</li>
-                      </ul>
-                    </div>
+                  <div class="sortlist">
+                    <div class="sort_title">資料類型</div>
+                    <ul>
+                      <li><a href="#">方志<span class="num">(5)</span></a></li>
+                      <li><a href="#">檔案文獻<span class="num">(3)</span></a></li>
+                      <li><a href="#">臺灣民報<span class="num">(4)</span></a></li>
+                      <li><a href="#">臺灣新民報<span class="num">(88)</span></a></li>
+                      <li><a href="#">興南新聞<span class="num">(11)</span></a></li>
+                      <li><a href="#">方志<span class="num">(5)</span></a></li>
+                      <li><a href="#">檔案文獻<span class="num">(3)</span></a></li>
+                    </ul>
+                    <div class="more"><a href="javascript:;">顯示更多</a></div>
                   </div>
                   <!-- 3 -->
-                  <div class="resultlist">
-                    <div class="project_options">
-                      <label>
-                        <input type="checkbox" name="" value="">3. </label>
-                    </div>
-                    <div class="resultcontent">
-                      <ul>
-                        <li><span class="title">章節名稱：</span><a href="#">第2483號</a></li>
-                        <li class="fulltext"><span>全文節錄：</span>可勝圜橋聚德星(延賢橋)！明王軫念草萊民，時上農壇望畝頻；省歛、省耕行<span class="wordred">補助</span>，海邦無島不生春(恤農壇)。 一曲銀塘供洗筆，光浮星斗自成.可勝圜橋聚德星(延賢橋)！可勝圜橋聚德星(延賢橋)！</li>
-                        <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
-                        <li><span class="title">作者：</span>吳大廷</li>
-                        <li><span class="title">頁次：</span>1-54</li>
-                      </ul>
-                    </div>
+                  <div class="sortlist">
+                    <div class="sort_title">書刊名</div>
+                    <ul>
+                      <li><a href="#">清史講義選錄<span class="num">(2)</span></a></li>
+                      <li><a href="#">臺灣遊記<span class="num">(2)</span></a></li>
+                      <li><a href="#">澎湖續編<span class="num">(2)</span></a></li>
+                      <li><a href="#">臺灣新民報1938年1月<span class="num">(4)</span></a></li>
+                      <li><a href="#">臺灣新民報1938年2月<span class="num">(3)</span></a></li>
+                      <li><a href="#">清史講義選錄<span class="num">(2)</span></a></li>
+                      <li><a href="#">臺灣遊記<span class="num">(2)</span></a></li>
+                    </ul>
+                    <div class="more"><a href="javascript:;">顯示更多</a></div>
                   </div>
                   <!-- 4 -->
-                  <div class="resultlist">
-                    <div class="project_options">
-                      <label>
-                        <input type="checkbox" name="" value="">4567. </label>
-                    </div>
-                    <div class="resultcontent">
-                      <ul>
-                        <li><span class="title">章節名稱：</span><a href="#">第2484號</a></li>
-                        <li class="fulltext"><span>全文節錄：</span>初等教育の國庫<span class="wordred">補助</span>一三十日空路歸任の先例を開いた森岡長官が記者團に語つてゐる通り、時局のために今度の豫算査定が例年になく峻嚴を極め年になく峻嚴を極め年になく峻嚴を極め.</li>
-                        <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
-                        <li><span class="title">作者：</span>吳大廷</li>
-                        <li><span class="title">頁次：</span>1-54</li>
-                      </ul>
-                    </div>
+                  <div class="sortlist">
+                    <div class="sort_title">出版年</div>
+                    <ul>
+                      <li><a href="#">1938<span class="num">(22)</span></a></li>
+                      <li><a href="#">1939<span class="num">(2)</span></a></li>
+                      <li><a href="#">1941<span class="num">(4)</span></a></li>
+                      <li><a href="#">1943<span class="num">(3)</span></a></li>
+                      <li><a href="#">1944<span class="num">(3)</span></a></li>
+                      <li><a href="#">1938<span class="num">(22)</span></a></li>
+                      <li><a href="#">1939<span class="num">(2)</span></a></li>
+                    </ul>
+                    <div class="more"><a href="javascript:;">顯示更多</a></div>
                   </div>
                   <!--  -->
                 </div>
-              </div>
-            </div>
-
-            <!-- Pagination start-->
-            <div class="pagination">
-              <form action="">
-                <div class="formInline">
-                  <div class="total">
-                    共<span>308</span>筆資料，
-                    <ul class="page">
-                      <li class="first">
-                        <a href="#" title="第一頁">第一頁 </a>
-                      </li>
-                      <li class="prev">
-                        <a href="#" title="回上一頁">回上一頁 </a>
-                      </li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#">...</a></li>
-                      <li class="next">
-                        <a href="#" title="下一頁">下一頁 </a>
-                      </li>
-                      <li class="last">
-                        <a href="#" title="最後一頁">最後一頁 </a>
-                      </li>
-                    </ul>
-                    <div class="select_all">
-                      <select name="" id="pet-select" aria-label="跳頁至">
-                        <option value="">跳頁至</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                      </select>
-                      <label for="pet-select">每頁顯示
-                        <select name="" id="pet-select" aria-label="每頁顯示">
-                          <option value="">10</option>
-                          <option value="">20</option>
-                          <option value="">30</option>
-                          <option value="">40</option>
-                        </select></label>
-                      <label for="pet-select">排序
-                        <select name="" id="pet-select" aria-label="排序">
-                          <option value="">文叢號(遞增)</option>
-                          <option value="">文叢號(遞減)</option>
-                        </select>
-                      </label>
+                <div class="rightblock">
+                  <div class="resultlist_group">
+                    <!-- 全選 -->
+                    <div class="selectall">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">全部勾選 </label>
+                      </div>
+                      <div class="resultcontent">
+                        <div class="checkedword">已勾選<em>7</em>筆</div>
+                        <button type="button" class="btn-submit">匯出</button>
+                      </div>
                     </div>
+                    <!-- 1 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">1. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">章節名稱：</span><a href="#">第2481號</a></li>
+                          <li class="fulltext"><span class="title">全文節錄：</span>初等教育の國庫<span class="yellowbg">補助</span>一三十日空路歸任の先例を開いた森岡長官が記者團に語つてゐる通り、時局のために今度の豫算査定が例年になく峻嚴を極め初等教育の國庫補助一三十日空路歸任の</li>
+                          <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
+                          <li><span class="title">作者：</span>吳大廷</li>
+                          <li><span class="title">頁次：</span>1-54</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">2. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">章節名稱：</span><a href="#">第2482號</a></li>
+                          <li class="fulltext"><span class="title">全文節錄：</span>價益昂，糴者日益眾。倉穀將罄。余懼民之乏食也，將勸紳耆商賈之有力者，買米<span class="yellowbg">補助</span>之。捐廉銀五百以為之倡。吳生聞之，歸告其母，願代出金。且曰：事宜價益昂，糴者日益眾。價益昂，糴者日益眾。
+                          </li>
+                          <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
+                          <li><span class="title">作者：</span>吳大廷</li>
+                          <li><span class="title">頁次：</span>1-54</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">3. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">章節名稱：</span><a href="#">第2483號</a></li>
+                          <li class="fulltext"><span class="title">全文節錄：</span>可勝圜橋聚德星(延賢橋)！明王軫念草萊民，時上農壇望畝頻；省歛、省耕行<span class="yellowbg">補助</span>，海邦無島不生春(恤農壇)。
+                            一曲銀塘供洗筆，光浮星斗自成.可勝圜橋聚德星(延賢橋)！可勝圜橋聚德星(延賢橋)！</li>
+                          <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
+                          <li><span class="title">作者：</span>吳大廷</li>
+                          <li><span class="title">頁次：</span>1-54</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">4. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">章節名稱：</span><a href="#">第2483號</a></li>
+                          <li class="fulltext"><span class="title">全文節錄：</span>可勝圜橋聚德星(延賢橋)！明王軫念草萊民，時上農壇望畝頻；省歛、省耕行<span class="yellowbg">補助</span>，海邦無島不生春(恤農壇)。
+                            一曲銀塘供洗筆，光浮星斗自成.可勝圜橋聚德星(延賢橋)！可勝圜橋聚德星(延賢橋)！</li>
+                          <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
+                          <li><span class="title">作者：</span>吳大廷</li>
+                          <li><span class="title">頁次：</span>1-54</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">4567. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">章節名稱：</span><a href="#">第2484號</a></li>
+                          <li class="fulltext"><span class="title">全文節錄：</span>初等教育の國庫<span class="yellowbg">補助</span>一三十日空路歸任の先例を開いた森岡長官が記者團に語つてゐる通り、時局のために今度の豫算査定が例年になく峻嚴を極め年になく峻嚴を極め年になく峻嚴を極め.</li>
+                          <li><span class="title">書刊名：</span>臺灣新民報1938年1月</li>
+                          <li><span class="title">作者：</span>吳大廷</li>
+                          <li><span class="title">頁次：</span>1-54</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--  -->
                   </div>
                 </div>
-              </form>
+              </div>
+
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                        </select>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pagination end-->
             </div>
-            <!-- Pagination end-->
           </section>
           <!-- SP End -->
 

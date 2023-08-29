@@ -10,6 +10,7 @@
   span {
     color: $primaryColor;
     margin: 0px 0.5em;
+    font-size: 1.25rem;
   }
   .page {
     margin: 10px 0 10px 5px;
@@ -25,15 +26,15 @@
       a {
         min-width: 40px;
         height: 40px;
-        border-radius: 5px;
+        border-radius: 2px;
         padding: 6px 10px;
         font-weight: 700;
         display: block;
         white-space: nowrap;
         font-size: 1em;
         color: $color-word;
-        background: #eee;
-        border: #ccc solid 1px;
+        background: #fff;
+        border: #e3e0db solid 1px;
         margin: 0 0.1em 0.25em;
         &:hover,
         &:focus-visible {
@@ -57,17 +58,17 @@
         width: 6px;
         height: 6px;
         margin-top: -4px;
-        border: 2px solid #666;
+        border: 2px solid #383838;
         border-left: none;
         border-bottom: none;
       }
-      &.first,
+
       &.prev,
-      &.next,
-      &.last {
+      &.next {
         a {
           text-indent: -9999px;
           position: relative;
+
           &:hover,
           &:focus-visible {
             &:before,
@@ -79,11 +80,35 @@
           }
         }
       }
+      &.first,
+      &.last {
+        a {
+          text-indent: -9999px;
+          position: relative;
+
+          &:hover,
+          &:focus-visible {
+            &:before,
+            &:after {
+              border: 2px solid #fff;
+              border-left: none;
+              border-bottom: none;
+            }
+            &:before {
+              border-top: none;
+            }
+          }
+        }
+      }
       &.first {
         a:before {
           @extend %arrow;
           margin-left: -6px;
-          transform: rotate(-135deg);
+          transform: rotate(180deg);
+          border-top: none;
+          width: 12px;
+          height: 13px;
+          top: 44%;
         }
         a:after {
           @extend %arrow;
@@ -108,8 +133,12 @@
       &.last {
         a:before {
           @extend %arrow;
-          margin-left: -3px;
-          transform: rotate(45deg);
+          margin-left: 3px;
+          transform: rotate(180deg);
+          border-top: none;
+          width: 12px;
+          height: 13px;
+          top: 44%;
         }
         a:after {
           @extend %arrow;
@@ -156,6 +185,8 @@
       margin: 0px 0.5em;
       height: 40px;
       width: auto;
+      border: #e3e0db solid 1px;
+      border-radius: 2px;
       @include screen('xs_mobile') {
         margin: 0 0 6px 5px;
       }
