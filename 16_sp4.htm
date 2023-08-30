@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺灣文獻全文資料庫</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- 燈箱facybox -->
+  <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/hyui.css" />
+  <!-- 字型 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Ysabeau+Infant:wght@600&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header full">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <div class="headergroup">
+          <h1>
+            <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+          </h1>
+          <!-- navigation Start -->
+          <nav class="navigation" role="navigation" aria-label="Site">
+            <!-- 新增div navlist -->
+            <div class="navlist">
+              <ul>
+                <li><a href="#">中央研究院臺灣史研究所</a></li>
+                <li><a href="#">中研院臺史所檔案館</a></li>
+                <li><a href="#">常見問答</a></li>
+                <li><a href="#">聯絡我們</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- navigation End -->
+        </div>
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li>
+              <a href="#">資料查詢？</a>
+            </li>
+            <li><a href="#">文獻叢刊瀏覽</a></li>
+            <li>
+              <a href="#">報刊報刊瀏覽</a>
+            </li>
+            <li>
+              <a href="#">新聞報刊全文瀏覽</a>
+            </li>
+            <li>
+              <a href="#">系統簡介</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="center" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li>新聞報刊瀏覽</li>
+            </ul>
+          </div>
+          <!-- function_panel -->
+          <div class="function_panel">
+            <!-- function功能區塊 -->
+            <div class="function">
+              <ul>
+                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                <!-- <li class="print"><a href="#">友善列印</a></li>
+                <li class="forward"><a href="#">轉寄友人</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- h2節點 -->
+          <h2 class="title"><span>臺灣新民報1938年1月</span></h2>
+          <!-- SP Start -->
+          <section class="sp">
+            <div class="innercontent">
+              <!-- 類型查詢start -->
+              <div class="typesearch">
+                <div class="flex-form form_inline">
+                  <div class="form_grp">
+                    <label for="selectSample" class="form_title">報刊類型</label>
+                    <div class="form_content">
+                      <select id="selectSample" name="">
+                        <option value="">臺灣新民報</option>
+                        <option value="">臺灣民報</option>
+                        <option value="">新南新聞</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="selectSample" class="form_title">年份</label>
+                    <div class="form_content">
+                      <select id="selectSample" name="">
+                        <option value="">1938</option>
+                        <option value="">1939</option>
+                        <option value="">1940</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form_grp">
+                    <label for="selectSample" class="form_title">月份</label>
+                    <div class="form_content">
+                      <select id="selectSample" name="">
+                        <option value="">01</option>
+                        <option value="">02</option>
+                        <option value="">03</option>
+                        <option value="">04</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="btn_grp">
+                    <button type="button" class="btn btn-primary">查詢</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 類型查詢end -->
+              <!-- 檢索結果start -->
+              <div class="searchresults_block">
+                <!-- 縮限查詢範圍按鈕 -->
+                <div class="narrowquery_btn"><a href="javascript:;">書目資料</a></div>
+                <div class="leftblock">
+                  <!-- 1 -->
+                  <div class="sortlist">
+                    <!-- <div class="sort_title">您查詢的條件為</div> -->
+                    <div class="content">
+                      <div class="sectitle">書刊名</div>
+                      <p>臺灣新民報1938年1月</p>
+                      <div class="sectitle">原刊年月</div>
+                      <p>昭和13年1月</p>
+                      <div class="sectitle">期數</div>
+                      <p>20</p>
+                      <div class="sectitle">面頁數</div>
+                      <p>160</p>
+                      <div class="sectitle">建議引用格式</div>
+                      <p>〈標題名稱〉，《資料類型》章節名稱，刊別版次。
+                      </p>
+                      <button type="button" class="btn btn-primary feedbtn" data-fancybox data-src="#modal">提要</button>
+                      <!-- 燈箱start -->
+                      <div class="lightbox_block" id="modal">
+                        <div class="lightbox_title">提要</div>
+                        <div class="lightbox_content">
+                          本書(一冊二二０面一三二、０００字)係繼第二九二種「清代琉球紀錄集輯」後之一集刊，共收有關琉球文獻三種。一為日人桂山義樹(君華)輯「琉球事略」一卷，取自徐葆光「中山傳信錄」。前有敘言，作為乾隆七年(日本寬保二年)；末附「書後」，略記日人所見。二為潘相撰「琉球入學見聞錄」四卷，今略其卷次而改編。潘相，湖南安鄉人。乾隆拔貢，歷充武英殿校書。二十五年，琉球官生鄭孝德等入學，調為教習；二十九年教習事竣，選授山東福山知縣。此錄不但詳具琉球入學本末，且參考中琉載籍、覈問入學陪臣，廣及琉球歷史、地理、制度、風土、文教，實為「地志」之一種。卷首有序、有例，正文依次為封爵、錫賚(土貢附)、星土、星槎(島蹟附)、謹度、爵祿、田賦(食貨附)、制度、祀法、兵刑、風俗、土音、字母、書籍、誦聲(教條附)、賢王(良吏民附)、奏疏、廩給、師生、官生、教規、答問、藝文，凡二十三目。三為姚文棟譯「琉球小志並補遺」一種，為光緒八年姚氏隨使日本時所譯。是編原附有「琉球說略」一文，因已見前編「集輯」所收，故略。據「說略」敘言(前收「說略」未載)云：『予東來後，就修史館新纂地書中摘譯琉球一門，參以海軍省實測圖說，為「琉球小志」兩卷。今見學校中幼童肄業之本，其說琉球地勢，亦為簡明。因復譯之，名曰「琉球說略」，以附「小志」之後』。「小志」分疆域、度數、形勢、沿革、間切、山嶽、河渠、港灣、岬角、海峽、島嶼、暗礁諸目，「補遺」亦略如之；所志島嶼，堪與徐撰「中山傳信錄」三十六島記載互為尋繹，誠為有用。此外，尚譯有日人所作數文，姚氏附跋闢之。
+                        </div>
+                      </div>
+                      <!-- 燈箱end -->
+                    </div>
+                  </div>
+                  <!--  -->
+                </div>
+                <div class="rightblock">
+                  <div class="detailed_group">
+                    <!-- 按鈕選項 -->
+                    <div class="buttonoptions">
+                      <div class="flex-form">
+                        <div class="form_grp">
+                          <label for="fake-legend" class="form_title" aria-required="true">卷期名稱</label>
+                          <div class="form_content">
+                            <select name="" id="fake-legend">
+                              <option value="">第2481號（YYYY-MM-DD）</option>
+                              <option value="">...</option>
+                              <option value="">...</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 詳細資料 start -->
+                    <div class="detailed_information">
+                      <!-- 1 -->
+                      <div class="fullmark_outdiv">
+                        <div class="fullmark_title">日刊第1版</div>
+                        <div class="browseimg"><a href="javascript:;">瀏覽影像</a></div>
+                        <div class="table_list ">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>序號</th>
+                                <th>標題</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="num">01</td>
+                                <td>祝辭／犬養毅 <span class="theme">主題關鍵字用黑框顯示，如果是關鍵字一樣會Highlight</span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">02</td>
+                                <td>祝辭／秦豐助 <span class="theme "><span class="yellowbg">社說</span></span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">03</td>
+                                <td>祝辭／南弘 <span class="theme">頭條新聞</span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">04</td>
+                                <td>祝辭／石塚英藏 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">05</td>
+                                <td>祝發行<span class="yellowbg">日刊</span>　並述所惑／田川大吉郎 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">06</td>
+                                <td>祝辭／堀田鼎 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">07</td>
+                                <td>社說　眾望所歸的　<span class="yellowbg">日刊</span>誕生
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="num">08</td>
+                                <td>體一視同仁之聖旨　為臺灣文化的向上／太田政弘 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">09</td>
+                                <td>祝電／阿部信行 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">10</td>
+                                <td>祝辭／小濱淨鑛
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="num">11</td>
+                                <td>祝辭／本山彥一 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">12</td>
+                                <td>望為臺灣　作公正之言論／木下信 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">13</td>
+                                <td>中華總領事題字　臺灣新民報　<span class="yellowbg">日刊</span>出版紀念／林顏樹 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">14</td>
+                                <td>所感／林獻堂 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">15</td>
+                                <td>漢詩　祝新民報<span class="yellowbg">日刊</span>初號／黃春潮 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">16</td>
+                                <td>新民報的使命／松岡正男 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">17</td>
+                                <td><span class="yellowbg">日刊</span>新民報發刊所惑／蔡培火 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">18</td>
+                                <td>廣告 </td>
+                              </tr>
+                            <tbody>
+                          </table>
+                        </div>
+                        <div class="numpages"><span>第01頁</span></div>
+                      </div>
+                      <!-- 2 -->
+                      <div class="fullmark_outdiv">
+                        <div class="fullmark_title">日刊第1版</div>
+                        <div class="browseimg"><a href="javascript:;">瀏覽影像</a></div>
+                        <div class="table_list ">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>序號</th>
+                                <th>標題</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="num">01</td>
+                                <td>祝辭／犬養毅 <span class="theme">主題關鍵字用黑框顯示，如果是關鍵字一樣會Highlight</span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">02</td>
+                                <td>祝辭／秦豐助 <span class="theme "><span class="yellowbg">社說</span></span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">03</td>
+                                <td>祝辭／南弘 <span class="theme">頭條新聞</span></td>
+                              </tr>
+                              <tr>
+                                <td class="num">04</td>
+                                <td>祝辭／石塚英藏 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">05</td>
+                                <td>祝發行<span class="yellowbg">日刊</span>　並述所惑／田川大吉郎 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">06</td>
+                                <td>祝辭／堀田鼎 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">07</td>
+                                <td>社說　眾望所歸的　<span class="yellowbg">日刊</span>誕生
+                                  <div class="article close">
+                                    <div class="contenttext">
+                                      <p>臺灣改隸于今三十有八年，四百六十萬島民所熱望的民意代表言論機關，在此內外多事多難的今年今日，呱呱一聲，竟然<span class="yellowbg">日刊</span>臺灣新民報誕生出世了。於是多年臺灣人本位日刊新聞的難題懸案，因此而已明白解決，於我島言論界，可謂劃一新時期，真堪為我臺灣前途道喜啊！
+                                        回想大正九年七月，本報的前身月刊雜誌『臺灣青年』創刊於東都，由月刊而半月刊，而旬升至於週刊，閱十二星霜。名雖改為『臺灣新民報』地雖遷在島都，然而始終一貫，以勇往邁進之毅力，抱不屈不撓之精神，惡戰苦鬪，邃達到了<span
+                                          class="yellowbg">日刊</span>新聞的目標，這雖說是我們多數同志努力的結晶，正義的勝利，但若非受全島同胞的始終愛護相持，那裡有今日呢。
+                                      </p>
+                                    </div>
+                                    <div class="collapsebtn"><a href="javascript:;">查看全文</a></div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="num">08</td>
+                                <td>體一視同仁之聖旨　為臺灣文化的向上／太田政弘 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">09</td>
+                                <td>祝電／阿部信行 </td>
+                              </tr>
+                              <tr>
+                                <td class="num">10</td>
+                                <td>祝辭／小濱淨鑛
+                                  <div class="article close">
+                                    <div class="contenttext">
+                                      <p>臺灣改隸于今三十有八年，四百六十萬島民所熱望的民意代表言論機關，在此內外多事多難的今年今日，呱呱一聲，竟然日刊臺灣新民報誕生出世了。於是多年臺灣人本位日刊新聞的難題懸案，因此而已明白解決，於我島言論界，可謂劃一新時期，真堪為我臺灣前途道喜啊！</p>
+
+                                    </div>
+                                    <div class="collapsebtn"><a href="javascript:;">查看全文</a></div>
+                                  </div>
+                                </td>
+                              </tr>
+
+                            <tbody>
+                          </table>
+                        </div>
+                        <div class="numpages"><span>第02頁</span></div>
+                      </div>
+                      <!--  -->
+                      <!-- 上下頁 -->
+                      <div class="pagebutton">
+                        <button type="button" class="btn btn-page prebtn">上一卷期</button>
+                        <button type="button" class="btn btn-page nextbtn">下一卷期</button>
+                      </div>
+                    </div>
+                    <!-- 詳細資料 start -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+          <!-- SP End -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_logo">
+          <img src="images/footer_logo.png" alt="" class="imgResponsive" />
+        </div>
+        <div class="footer_info">
+          <p>
+            地址：115 臺北市南港區研究院路二段128號 人文社會科學館南棟11樓 中研院臺史所檔案館 <br />
+            <span>電話：(02)2652-5181</span> <span>傳真：(02)2652-5184</span><span class="counter">累計瀏覽人次:<em>46476653</em></span>
+          </p>
+          <p class="Copyright">Copyright © 2023 Institute of Taiwan History. All Rights Reserved</p>
+        </div>
+        <!-- <div class="footer_icon">
+              <a target="_blank" href="javascript:;">
+                <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+              </a>
+              <a target="_blank" href="javascript:;">
+                <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+              </a>
+            </div> -->
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- 外掛 plugin js -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- slick -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- lazyload -->
+  <script src="vendor/picturefill/picturefill.min.js" async></script>
+  <!-- picturefill -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- scrolltable -->
+  <!-- sticky-sidebar -->
+  <script src="vendor/sticky-sidebar/sticky-sidebar.js"></script>
+  <script src="vendor/sticky-sidebar/ResizeSensor.js"></script>
+  <!-- fancy -->
+  <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+  <!-- hyUI -->
+  <script src="js/hyui.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>

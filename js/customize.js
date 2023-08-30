@@ -287,4 +287,42 @@ $(function () {
       // instead of a settings object
     ],
   });
+  // 內文收合
+  var _collapsebtn = $('.fullmark_outdiv .table_list .article .collapsebtn');
+  _collapsebtn.click(function () {
+    if ($(this).parents('.article').hasClass('close')) {
+      $(this).find('a').text('收合全文');
+      $(this).parents('.article').removeClass('close');
+    } else {
+      $(this).find('a').text('查看全文');
+      $(this).parents('.article').addClass('close');
+    }
+  });
 });
+
+// 內文收合
+// var _collapsebtn = $('.fullmark_outdiv .table_list .article .collapsebtn');
+// var _article = $('.fullmark_outdiv .table_list .article');
+// // var hPartial = _article.height();
+// // _article.each(function () {
+// // var _this = $(this);
+// // var hFull;
+// // });
+// _collapsebtn.click(function () {
+// if (_article.hasClass('close')) {
+// $(this).find('a').text('收合全文');
+// $(this).parent('.article').removeClass('close');
+// // hFull = _this.innerHeight();
+// // _this.animate({ height: hFull }, 500, function () {
+// // $(this).find('a').text('收合全文');
+// // _this.removeClass('close');
+// // });
+// } else {
+// $(this).find('a').text('查看全文');
+// $(this).parent('.article').addClass('close');
+// // _this.animate({ height: hPartial }, 500, function () {
+// // $(this).find('a').text('查看全文');
+// // _this.addClass('close');
+// // });
+// }
+// });

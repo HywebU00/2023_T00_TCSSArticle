@@ -27,6 +27,9 @@ h2.title {
     left: 0;
     margin-top: -5px;
     z-index: 1;
+    @include screen('xs_mobile') {
+      display: none;
+    }
   }
   &:after {
     content: '';
@@ -38,6 +41,9 @@ h2.title {
     right: 0;
     margin-top: -5px;
     z-index: 1;
+    @include screen('xs_mobile') {
+      display: none;
+    }
   }
   span {
     @extend %mptitle;
@@ -61,6 +67,9 @@ h2.title {
       margin-top: -5px;
       margin-left: -33px;
       z-index: 1;
+      @include screen('xs_mobile') {
+        display: none;
+      }
     }
     &:after {
       content: '';
@@ -73,6 +82,9 @@ h2.title {
       margin-top: -5px;
       margin-right: -33px;
       z-index: 1;
+      @include screen('xs_mobile') {
+        display: none;
+      }
     }
   }
 }
@@ -372,5 +384,27 @@ h2.title {
     @include screen('mobile') {
       flex: 1 1 calc(100% / 1);
     }
+  }
+}
+
+// 燈箱
+.lightbox_block {
+  display: none;
+  width: 50vw;
+  height: 60vh;
+  @include screen('mobile') {
+    width: 70vw;
+    height: 60vh;
+  }
+  @include screen('xs_mobile') {
+    width: 90vw;
+    height: 95vh;
+  }
+  .lightbox_title {
+    font-size: 1.25rem;
+    color: $primaryColor;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    text-align: center;
   }
 }

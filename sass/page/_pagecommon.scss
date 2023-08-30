@@ -302,7 +302,7 @@
         text-align: center;
       }
       .content {
-        padding: 1em 1em 0;
+        padding: 1em 1em 0.5em;
         .sectitle {
           color: $primaryColor;
 
@@ -408,6 +408,31 @@
       .otherbtn {
         width: 100%;
         padding: 0.3em 1.25em;
+      }
+      .feedbtn {
+        padding: 0.3em 2.125em 0.3em 1em;
+        // width: 100px;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        &:before {
+          content: '';
+          border: 2px solid #fff;
+          width: 8px;
+          height: 8px;
+          border-left: none;
+          border-bottom: none;
+          position: absolute;
+          right: 15px;
+          top: 12px;
+          transform: rotate(45deg);
+          transition: 0.5s;
+        }
+        &:hover {
+          &:before {
+            right: 12px;
+          }
+        }
       }
     }
   }
@@ -595,19 +620,35 @@
             }
           }
         }
+        .flex-form {
+          width: 100%;
+          background-color: $primaryColor;
+          padding: 0.3em 1em;
+          margin: 0;
+
+          .form_grp {
+            .form_title {
+              align-self: center;
+              color: #fff;
+            }
+          }
+          select {
+            border: 1px solid #ddd;
+          }
+        }
       }
       // 詳細資料
       .detailed_information {
         .fullmark_outdiv {
-          padding: 5px;
+          padding: 1em;
           border: 1px solid #ddd;
           margin-bottom: 1em;
-          font-size: 1.125rem;
+          position: relative;
+
           &:hover {
             background-color: #f7f7f5;
           }
           .fullmark_ab {
-            padding: 1em;
             line-height: 1.7;
             .dispbrfont {
               font-weight: bolder;
@@ -615,10 +656,128 @@
               display: inline-block;
             }
             .smallabs1 {
-              font-size: 1rem;
+              font-size: 0.938rem;
               color: $color-red;
             }
           }
+          .fullmark_title {
+            font-weight: bolder;
+            margin: 0.5em 0;
+            font-size: 1.125rem;
+            color: $primaryColor;
+          }
+          .browseimg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            a {
+              display: block;
+              padding: 5px 10px 5px 30px;
+              background-color: $secondaryColor;
+              color: #fff;
+              background-image: url('../images/icon/icon_photo2.svg');
+              background-repeat: no-repeat;
+              background-position: 10px center;
+              background-size: 12px;
+            }
+          }
+          .table_list {
+            margin-bottom: 1em;
+            table {
+              tr:nth-child(even) {
+                background-color: #fff;
+              }
+              tr:hover {
+                background-color: #fff;
+              }
+              th {
+                background-color: #ddd;
+                color: #000;
+                // padding: 0.3em 0.5em 0.3em;
+              }
+              td {
+                text-align: left;
+                vertical-align: top;
+                // padding: 0.3em 0.5em 0.3em;
+                &.num {
+                  text-align: center;
+                }
+                .theme {
+                  border: 1px solid #999;
+                  padding: 1px 3px;
+                  margin-left: 0.5em;
+                }
+                .article {
+                  position: relative;
+                  overflow: hidden;
+                  margin: 10px auto;
+                  padding: 1em;
+                  line-height: 1.5;
+                  background: #eee;
+                  color: #333;
+                  border-radius: 5px;
+                  overflow: hidden;
+                  .contenttext {
+                    p {
+                      padding: 0;
+                      margin: 0 0 0.5em;
+                      transition: 0.5s;
+                    }
+                  }
+                  &.close {
+                    p {
+                      @include text-line(2, 23px);
+                    }
+                    .collapsebtn {
+                      a {
+                        &:before {
+                          content: '';
+                          border: 2px solid #fff;
+                          border-left: none;
+                          border-bottom: none;
+                          width: 6px;
+                          height: 6px;
+                          position: absolute;
+                          left: 10px;
+                          top: 7px;
+                          transform: rotate(135deg);
+                        }
+                      }
+                    }
+                  }
+                  .collapsebtn {
+                    display: flex;
+                    justify-content: flex-end;
+                    a {
+                      display: block;
+                      background-color: $primaryColor;
+                      color: #fff;
+                      padding: 0.1em 0.5em 0.1em 2em;
+                      font-size: 0.938em;
+                      border-radius: 0.2em;
+                      position: relative;
+                      &:hover {
+                        text-decoration: none;
+                      }
+                      &:before {
+                        content: '';
+                        border: 2px solid #fff;
+                        border-left: none;
+                        border-bottom: none;
+                        width: 6px;
+                        height: 6px;
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        transform: rotate(-45deg);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
           .numpages {
             display: flex;
             justify-content: flex-end;
@@ -629,12 +788,27 @@
             }
           }
         }
+        // 中間頁數省略
+        .pages_omitted {
+          text-align: center;
+          margin: 0 0 1em;
+        }
+        // 上下頁
         .pagebutton {
           display: flex;
           justify-content: center;
+          @media (max-width: 480px) {
+            flex-wrap: wrap;
+          }
           button {
             margin: 0 1em;
+            @media (max-width: 480px) {
+              flex: 0 0 auto;
+              // flex-basis: 100%;
+              margin: 0 1em 0.5em;
+            }
           }
+
           .prebtn {
             padding: 0.2em 1.25em 0.3em 2em;
             position: relative;
@@ -680,6 +854,53 @@
             }
           }
         }
+      }
+    }
+  }
+}
+// 類型查詢
+.typesearch {
+  background-color: lighten($color: $linkColor, $amount: 15);
+  padding: 0.1em 1em;
+  margin: 0 0 1em;
+  .flex-form {
+    &.form_inline {
+      border-bottom: none;
+    }
+    .form_grp {
+      .form_title {
+        align-self: center;
+      }
+    }
+    .btn_grp {
+      .btn-primary {
+        padding: 0.3em 1em;
+        margin: 0.4em 0 0;
+      }
+    }
+    @include screen('mobile') {
+      .form_grp {
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+        .form_title {
+          flex: 0 0 auto;
+          flex-basis: 100px;
+          max-width: 100px !important;
+        }
+        .form_content {
+          select {
+            width: 97%;
+          }
+        }
+      }
+      @include screen('xs_mobile') {
+        .form_grp {
+          flex-wrap: wrap;
+          margin-right: 0;
+        }
+      }
+      .btn_grp {
+        flex-basis: 100%;
       }
     }
   }
