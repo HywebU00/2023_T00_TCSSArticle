@@ -9653,7 +9653,7 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   right: 0;
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems {
-  padding-left: 25px;
+  padding-left: 15px;
   padding-bottom: 30px;
   background-color: #014751;
   border-bottom: none;
@@ -9675,8 +9675,8 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .title {
   flex: 0 0 auto;
-  flex-basis: 58px;
-  max-width: 58px;
+  flex-basis: 50px;
+  max-width: 50px;
   margin-left: 0;
   font-size: 1.75rem;
   background: rgb(214, 193, 138);
@@ -9764,8 +9764,8 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 @media screen and (max-width: 767px) {
   .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist {
     flex: 1 1 auto;
-    flex-basis: calc(100% - 58px);
-    max-width: calc(100% - 58px);
+    flex-basis: calc(100% - 50px);
+    max-width: calc(100% - 50px);
     margin-bottom: 20px;
   }
 }
@@ -9777,39 +9777,16 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   }
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul {
-  margin: 0 0px 40px 10px;
+  margin: 0 10px 40px 10px;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li {
-  flex: 0 0 auto;
-  flex-basis: 48%;
-  max-width: 48%;
   font-size: 1.125rem;
-}
-@media (max-width: 1100px) {
-  .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li {
-    flex-basis: 98%;
-    max-width: 98%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li {
-    flex-basis: 48%;
-    max-width: 48%;
-  }
-}
-@media (max-width: 660px) {
-  .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li {
-    flex-basis: 98%;
-    max-width: 98%;
-  }
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a {
   color: #fff;
-  padding: 10px 0px 10px 25px;
+  padding: 7px 0px 7px 25px;
   display: block;
   border: 1px solid #014751;
   position: relative;
@@ -9820,6 +9797,20 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a span {
   margin-right: 15px;
+}
+@media (max-width: 1100px) {
+  .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a span {
+    display: inline;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a:hover {
   text-decoration: none;
@@ -10963,7 +10954,7 @@ h2.title span:after {
   display: block;
   color: #0b454f;
   position: relative;
-  padding-right: 20px;
+  padding: 0.4em 1.5em 0.4em 0;
   text-align: left;
   transition: 0.5s;
   font-size: 1rem;
@@ -11124,7 +11115,7 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li {
   margin-bottom: 0.5em;
-  padding-left: 100px;
+  padding-left: 120px;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li.fulltext {
   overflow: hidden;
@@ -11138,10 +11129,10 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li span.title {
   font-weight: bolder;
-  width: 90px;
+  width: 120px;
   display: inline-block;
   text-align: right;
-  margin-left: -90px;
+  margin-left: -120px;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li:last-child {
   margin: 0;
