@@ -474,11 +474,20 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+
           @include screen('xs_mobile') {
             padding-left: 0.5em;
           }
+          @media (max-width: 370px) {
+            display: block;
+            button.btn-submit {
+              float: right;
+            }
+          }
           .checkedword {
-            margin-right: 2em;
+            margin-right: 0.5em;
+            display: flex;
+            align-items: center;
             em {
               font-style: normal;
               color: #c33c00;
@@ -487,14 +496,15 @@
             }
             button {
               &.btn {
-                padding: 0.5em;
-                margin: 0.15em 0.1em 0.4em 0.5em;
+                padding: 0.3em 0.6em;
+                margin: 0.3em 0.1em 0.3em 0.5em;
+                min-width: auto;
               }
             }
           }
           button.btn-submit {
-            padding-left: 1em;
-            padding-right: 1em;
+            padding-left: 0.8em;
+            padding-right: 0.8em;
           }
         }
       }

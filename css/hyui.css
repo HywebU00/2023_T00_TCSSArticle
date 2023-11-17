@@ -11060,8 +11060,18 @@ h2.title span:after {
     padding-left: 0.5em;
   }
 }
+@media (max-width: 370px) {
+  .searchresults_block .rightblock .resultlist_group .selectall .resultcontent {
+    display: block;
+  }
+  .searchresults_block .rightblock .resultlist_group .selectall .resultcontent button.btn-submit {
+    float: right;
+  }
+}
 .searchresults_block .rightblock .resultlist_group .selectall .resultcontent .checkedword {
-  margin-right: 2em;
+  margin-right: 0.5em;
+  display: flex;
+  align-items: center;
 }
 .searchresults_block .rightblock .resultlist_group .selectall .resultcontent .checkedword em {
   font-style: normal;
@@ -11070,12 +11080,13 @@ h2.title span:after {
   padding: 0 0.5em;
 }
 .searchresults_block .rightblock .resultlist_group .selectall .resultcontent .checkedword button.btn {
-  padding: 0.5em;
-  margin: 0.15em 0.1em 0.4em 0.5em;
+  padding: 0.3em 0.6em;
+  margin: 0.3em 0.1em 0.3em 0.5em;
+  min-width: auto;
 }
 .searchresults_block .rightblock .resultlist_group .selectall .resultcontent button.btn-submit {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist {
   display: flex;
