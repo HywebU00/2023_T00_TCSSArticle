@@ -299,7 +299,6 @@ $(function () {
     }
   });
 });
-
 // 內文收合
 // var _collapsebtn = $('.fullmark_outdiv .table_list .article .collapsebtn');
 // var _article = $('.fullmark_outdiv .table_list .article');

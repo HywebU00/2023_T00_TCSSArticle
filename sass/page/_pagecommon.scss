@@ -305,9 +305,11 @@
         padding: 1em 1em 0.5em;
         .sectitle {
           color: $primaryColor;
-
-          font-size: 1rem;
+          font-weight: bolder;
+          font-size: 1.063rem;
           margin-bottom: 8px;
+          background-color: darken($color: #f8f8f4, $amount: 10);
+          padding: 0.2em 0.5em;
         }
         p {
           line-height: 1.5;
