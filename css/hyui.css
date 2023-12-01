@@ -9217,7 +9217,7 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 }
 .searchgroup .form_content.formflex select {
   flex: 0 0 auto;
-  flex-basis: 120px;
+  width: auto;
 }
 .searchgroup .form_content.formflex input {
   flex: 1 1 auto;

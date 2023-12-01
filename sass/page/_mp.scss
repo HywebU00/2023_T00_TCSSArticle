@@ -112,7 +112,8 @@
 
       select {
         flex: 0 0 auto;
-        flex-basis: 120px;
+        // flex-basis: 120px;
+        width: auto;
       }
       input {
         flex: 1 1 auto;
