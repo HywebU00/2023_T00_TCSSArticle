@@ -289,10 +289,12 @@ $(function () {
   });
   // 內文收合
   var _issuecontent = $('.fullmark_outdiv .table_list .article .contenttext');
-  if (_issuecontent.height() > 46) {
-    _issuecontent.parent().addClass('close');
-    _issuecontent.next('.collapsebtn').css('display', 'flex');
-  }
+  _issuecontent.each(function () {
+    if ($(this).height() > 46) {
+      $(this).parent().addClass('close');
+      $(this).next('.collapsebtn').css('display', 'flex');
+    }
+  });
 
   var _collapsebtn = $('.fullmark_outdiv .table_list .article .collapsebtn');
   _collapsebtn.click(function () {
