@@ -11325,7 +11325,7 @@ h2.title span:after {
   margin: 0 0 0.5em;
   transition: 0.5s;
 }
-.searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close p {
+.searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .contenttext p {
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -11350,6 +11350,7 @@ h2.title span:after {
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article .collapsebtn {
   display: flex;
   justify-content: flex-end;
+  display: none;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article .collapsebtn a {
   display: block;
@@ -11445,6 +11446,13 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .pagebutton .nextbtn:hover:before {
   right: 12px;
+}
+.searchresults_block .rightblock .issuename_block {
+  padding: 0.8em 1em;
+  color: #fff;
+  background-color: #0b454f;
+  margin-bottom: 0.5em;
+  font-size: 1.125em;
 }
 
 .typesearch {

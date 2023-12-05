@@ -743,9 +743,12 @@
                     }
                   }
                   &.close {
-                    p {
-                      @include text-line(2, 23px);
+                    .contenttext {
+                      p {
+                        @include text-line(2, 23px);
+                      }
                     }
+
                     .collapsebtn {
                       a {
                         &:before {
@@ -766,6 +769,7 @@
                   .collapsebtn {
                     display: flex;
                     justify-content: flex-end;
+                    display: none;
                     a {
                       display: block;
                       background-color: $primaryColor;
@@ -873,6 +877,14 @@
           }
         }
       }
+    }
+    // 卷期名稱
+    .issuename_block {
+      padding: 0.8em 1em;
+      color: #fff;
+      background-color: $primaryColor;
+      margin-bottom: 0.5em;
+      font-size: 1.125em;
     }
   }
 }
