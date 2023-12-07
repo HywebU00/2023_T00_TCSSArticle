@@ -6936,6 +6936,7 @@ table th {
     text-align: left;
     font-weight: bold;
     color: #000;
+    font-family: Microsoft JhengHei;
   }
   .table_list td.num {
     text-align: left;
@@ -9088,7 +9089,6 @@ body.noscroll {
 
 .dfkai {
   font-family: DFKai-sb;
-  font-size: 0.938rem;
 }
 
 .mic {
@@ -11319,6 +11319,11 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td.num {
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td.num {
+    text-align: left;
+  }
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .theme {
   border: 1px solid #999;
