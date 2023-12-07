@@ -547,15 +547,22 @@
             li {
               margin-bottom: 0.5em;
               padding-left: 120px;
-              &.fulltext {
-                @include text-line(2, 23px);
-              }
+              display: flex;
+
               span.title {
+                flex: 0 0 auto;
+                flex-basis: 120px;
                 font-weight: bolder;
                 width: 120px;
                 display: inline-block;
                 text-align: right;
                 margin-left: -120px;
+              }
+              span.content {
+                flex: 1 1 auto;
+                &.fulltext {
+                  @include text-line(2, 23px);
+                }
               }
               &:last-child {
                 margin: 0;
@@ -668,6 +675,7 @@
           }
           .fullmark_ab {
             line-height: 1.7;
+            margin-bottom: 1em;
             .dispbrfont {
               font-weight: bolder;
               padding: 0.2em 0;

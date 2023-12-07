@@ -9086,6 +9086,11 @@ body.noscroll {
   background-color: #fff159;
 }
 
+.dfkai {
+  font-family: DFKai-sb;
+  font-size: 0.938em;
+}
+
 .more {
   margin: 0 30px 0 0;
   display: flex;
@@ -11139,8 +11144,21 @@ h2.title span:after {
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li {
   margin-bottom: 0.5em;
   padding-left: 120px;
+  display: flex;
 }
-.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li.fulltext {
+.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li span.title {
+  flex: 0 0 auto;
+  flex-basis: 120px;
+  font-weight: bolder;
+  width: 120px;
+  display: inline-block;
+  text-align: right;
+  margin-left: -120px;
+}
+.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li span.content {
+  flex: 1 1 auto;
+}
+.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li span.content.fulltext {
   overflow: hidden;
   text-overflow: -o-ellipsis-lastline;
   text-overflow: ellipsis;
@@ -11149,13 +11167,6 @@ h2.title span:after {
   -webkit-box-orient: vertical;
   line-height: 23px;
   height: calc(23px * 2);
-}
-.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li span.title {
-  font-weight: bolder;
-  width: 120px;
-  display: inline-block;
-  text-align: right;
-  margin-left: -120px;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li:last-child {
   margin: 0;
@@ -11253,6 +11264,7 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .fullmark_ab {
   line-height: 1.7;
+  margin-bottom: 1em;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .fullmark_ab .dispbrfont {
   font-weight: bolder;
