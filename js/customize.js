@@ -290,7 +290,7 @@ $(function () {
   // 內文收合
   var _issuecontent = $('.fullmark_outdiv .table_list .article .contenttext');
   _issuecontent.each(function () {
-    if ($(this).height() > 46) {
+    if ($(this).height() > 50) {
       $(this).parent().addClass('close');
       $(this).next('.collapsebtn').css('display', 'flex');
     }
