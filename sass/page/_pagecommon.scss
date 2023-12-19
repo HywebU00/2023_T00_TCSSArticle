@@ -561,7 +561,7 @@
               span.content {
                 flex: 1 1 auto;
                 &.fulltext {
-                  @include text-line(2, 23px);
+                  @include text-line(2, 30px);
                 }
               }
               &:last-child {
@@ -682,7 +682,6 @@
               display: inline-block;
             }
             .smallabs1 {
-              font-size: 0.938rem;
               color: $color-red;
             }
           }
@@ -756,7 +755,7 @@
                   &.close {
                     .contenttext {
                       p {
-                        @include text-line(2, 23px);
+                        @include text-line(2, 30px);
                       }
                     }
 
