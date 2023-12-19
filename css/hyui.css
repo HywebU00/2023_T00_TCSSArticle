@@ -11279,6 +11279,7 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .fullmark_ab .smallabs1 {
   color: #d30000;
+  font-size: 1.125rem;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .fullmark_title {
   font-weight: bolder;
