@@ -9405,7 +9405,7 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   background-repeat: no-repeat;
   background-color: #0b454f;
   max-height: 650px;
-  padding: 60px 0 40px;
+  padding: 110px 0 40px;
   position: relative;
   z-index: 6;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px;
@@ -9550,10 +9550,38 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 }
 
 .newspaperFulltext {
-  padding: 60px 0 50px;
+  padding: 60px 0 70px;
+  background-color: #0b454f;
+  position: relative;
+  background-image: url("../images/seriesBrowsing_bg02.png");
+  background-repeat: no-repeat;
+  background-position: center -310px;
+}
+.newspaperFulltext:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: url("../images/seriesBrowsing_bg01.png") repeat-x left top;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.newspaperFulltext:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: url("../images/seriesBrowsing_bg01.png") repeat-x left top;
+  position: absolute;
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 16px;
+  z-index: 1;
 }
 .newspaperFulltext .newspapergroup .title {
-  color: #0b454f;
+  color: #fff;
   margin-bottom: 40px;
 }
 .newspaperFulltext .newspapergroup .newspaperlist ul {
@@ -9595,50 +9623,23 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   position: relative;
   margin-top: 0;
   z-index: 9;
-  padding-top: 70px;
-  background-image: url("../images/seriesBrowsing_bg01.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
+  padding-top: 80px;
+  margin-bottom: -55px;
 }
 .seriesBrowsing:before {
   content: "";
   width: 100%;
-  height: 4px;
-  background: url("../images/seriesBrowsing_bg01.png") repeat-x left top;
+  height: 100%;
   position: absolute;
-  top: 16px;
-  right: 0;
-  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.2) 100%);
   z-index: 1;
-}
-.seriesBrowsing:after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background: url("../images/seriesBrowsing_bg01.png") repeat-x left top;
-  position: absolute;
-  top: 380px;
-  right: 0;
-  left: 0;
-  z-index: 1;
-}
-.seriesBrowsing.seriesbg {
-  position: relative;
-}
-.seriesBrowsing.seriesbg:after {
-  content: "";
-  width: 100%;
-  height: 17px;
-  position: absolute;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px;
-  z-index: 1;
-  bottom: 0px;
+  top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
 }
 .seriesBrowsing .title {
-  color: #fff;
+  color: #0b454f;
   margin-bottom: 40px;
 }
 .seriesBrowsing .seriesBrowsing_group {
@@ -9647,21 +9648,11 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   position: relative;
 }
 .seriesBrowsing .seriesBrowsing_group .browseItemsBlock {
-  padding: 12px 12px 0 12px;
+  padding: 12px;
   flex: 1 1 auto;
-  background: rgb(204, 184, 132);
-  background: linear-gradient(180deg, rgb(204, 184, 132) 40%, rgba(204, 184, 132, 0) 98%);
+  background-color: #d8c38b;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 38px, rgba(0, 0, 0, 0.22) 0px 10px 30px;
   position: relative;
-}
-.seriesBrowsing .seriesBrowsing_group .browseItemsBlock:before {
-  content: "";
-  width: 100%;
-  height: 236px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px -5px 25px, rgba(0, 0, 0, 0.2) 0px -5px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems {
   padding-left: 15px;
