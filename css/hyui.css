@@ -9641,6 +9641,8 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 .seriesBrowsing .title {
   color: #0b454f;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
 }
 .seriesBrowsing .seriesBrowsing_group {
   display: flex;
@@ -9761,6 +9763,8 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist {
   flex: 1 1 auto;
+  flex-basis: calc((100% - 150px) / 3);
+  max-width: calc((100% - 150px) / 3);
   margin-top: 40px;
 }
 @media screen and (max-width: 767px) {
@@ -9793,9 +9797,6 @@ h2.title span, .seriesBrowsing .seriesBrowsing_group .browseItems .title, .serie
   border: 1px solid #014751;
   position: relative;
   width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .seriesBrowsing .seriesBrowsing_group .browseItems .itemslist ul li a span {
   margin-right: 15px;
