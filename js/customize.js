@@ -297,13 +297,19 @@ $(function () {
   });
 
   var _collapsebtn = $('.fullmark_outdiv .table_list .article .collapsebtn');
-  _collapsebtn.click(function () {
+  _collapsebtn.click(function (e) {
+    var articletop = $(this).parent('.article').offset().top;
+    var Displacementheight = -120; // 可調整的位移值，例如向上移動 100 像素
     if ($(this).parents('.article').hasClass('close')) {
       $(this).find('a').text('收合全文');
       $(this).parents('.article').removeClass('close');
+      e.preventDefault;
     } else {
       $(this).find('a').text('查看全文');
       $(this).parents('.article').addClass('close');
+      $('html, body')
+        .stop(true, true)
+        .animate({ scrollTop: articletop + Displacementheight }, 0);
     }
   });
 });

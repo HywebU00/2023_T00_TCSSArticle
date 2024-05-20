@@ -21,7 +21,7 @@ $color-word: #2e2e2e; //一般字的顏色
 $btn-word: #222; //按鈕字的顏色
 // 連結顏色
 $aColor: $primaryColor;
-$aHover: lighten($primaryColor, 5);
+$aHover: lighten($primaryColor, 15);
 $aFocus: $lightColor;
 $aCutover: #b9b7ab; //切換按鈕
 // 表單focus顏色

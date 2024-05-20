@@ -1381,7 +1381,7 @@ a.goCenter:hover, a.goCenter:focus {
   color: #0b454f;
 }
 .no-js noscript a:hover, .no-js noscript a:focus {
-  color: #0e5965;
+  color: #148092;
 }
 .no-js .mpSlider .img-container {
   display: none;
@@ -1574,7 +1574,7 @@ a {
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -1636,15 +1636,15 @@ kbd kbd {
   color: #333;
 }
 .font_size ul li a:hover, .font_size ul li a:focus {
-  background: #0e5965;
+  background: #148092;
   color: #fff;
 }
 .font_size ul li a.active {
-  background: #0e5965;
+  background: #148092;
   color: #fff;
 }
 .font_size ul li a.active:hover, .font_size ul li a.active:focus {
-  background: #0e5965;
+  background: #148092;
   color: #fff;
 }
 .font_size ul li a.small {
@@ -2113,7 +2113,7 @@ kbd kbd {
   text-decoration: none;
 }
 .breadcrumb a:hover, .breadcrumb a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -2283,7 +2283,7 @@ img.loaded {
   right: 0;
 }
 .img-container a:focus-visible:before {
-  box-shadow: 0 0px 0px 2px #0e5965 inset;
+  box-shadow: 0 0px 0px 2px #148092 inset;
 }
 .img-container img {
   position: absolute;
@@ -2863,7 +2863,7 @@ em[tooltip] {
   text-decoration: none;
 }
 em[tooltip]:hover, em[tooltip]:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -3106,7 +3106,7 @@ div.tag ul li a {
   padding: 0.2em 0.5em;
 }
 div.tag ul li a:hover, div.tag ul li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -3370,7 +3370,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   text-decoration: none;
 }
 .header .navigation .navlist li a:hover, .header .navigation .navlist li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .header .navigation .submenuBox {
@@ -3481,7 +3481,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   text-decoration: none;
 }
 .search .keywordHot ul a:hover, .search .keywordHot ul a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -3552,7 +3552,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   border: none;
 }
 .m_search .btn_grp .btn:hover, .m_search .btn_grp .btn:focus {
-  color: #148092;
+  color: #1ba7bf;
 }
 .m_search .keywordHot {
   flex: 1 1 100%;
@@ -3575,7 +3575,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #fff;
 }
 .m_search .keywordHot ul a:hover, .m_search .keywordHot ul a:focus {
-  color: #148092;
+  color: #1ba7bf;
 }
 
 @keyframes showMenu {
@@ -3691,7 +3691,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #d6c18a;
 }
 .menu > ul > li.active > a:after, .menu > ul > li:hover > a:after {
-  border: 2px solid #0e5965;
+  border: 2px solid #148092;
   border-bottom: none;
   border-left: none;
 }
@@ -3725,7 +3725,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .menu ul li ul li a:hover, .menu ul li ul li a:focus-visible {
   color: #fff;
-  background: #0e5965;
+  background: #148092;
 }
 .menu ul li ul li.hasChild > ul {
   z-index: 999;
@@ -4194,10 +4194,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin-bottom: 0.2em;
 }
 .megamenu > ul > li:hover > a {
-  color: #0e5965;
+  color: #148092;
 }
 .megamenu > ul > li:hover > a:after {
-  border: 2px solid #0e5965;
+  border: 2px solid #148092;
   border-bottom: none;
   border-left: none;
 }
@@ -4236,7 +4236,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   box-sizing: border-box;
 }
 .megamenu ul li ul li a:hover, .megamenu ul li ul li a:focus {
-  background: #0e5965;
+  background: #148092;
 }
 .megamenu ul li ul li ul {
   margin: 0 0 20px;
@@ -4738,7 +4738,7 @@ footer .footer_icon a:focus:after {
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 0px 0px 0px 1px #0e5965 inset;
+  box-shadow: 0px 0px 0px 1px #148092 inset;
   z-index: 99;
 }
 footer .footer_icon img {
@@ -4771,7 +4771,7 @@ footer .footer_icon img {
   min-width: 6em;
   color: #FFF;
   border: none;
-  background: #0e5965;
+  background: #148092;
   position: absolute;
   right: 1%;
   z-index: 90;
@@ -4793,7 +4793,7 @@ footer .footer_icon img {
   transition: 0.3s ease-out;
 }
 .fatfooter .btn-fatfooter:hover, .fatfooter .btn-fatfooter:focus {
-  background: #083139;
+  background: #0e5965;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -4856,7 +4856,7 @@ footer .footer_icon img {
   background: none;
 }
 .fatfooter nav ul li ul li a:hover, .fatfooter nav ul li ul li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .fatfooter nav ul li ul ul {
@@ -7127,7 +7127,7 @@ table th {
   text-decoration: none;
 }
 .lp table td a:hover, .lp table td a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .lp table td.date {
@@ -7169,7 +7169,7 @@ table th {
   color: #2e2e2e;
 }
 .lp .list > ul > li > a:hover, .lp .list ol > li > a:hover {
-  color: #0e5965;
+  color: #148092;
 }
 .lp .list > ul > li > a .num, .lp .list ol > li > a .num {
   width: 1.5em;
@@ -7235,7 +7235,7 @@ table th {
   text-decoration: none;
 }
 .sub_menu li a:hover, .sub_menu li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .sub_menu li a .num {
@@ -7352,7 +7352,7 @@ table th {
   text-decoration: none;
 }
 .tabContent li a:hover, .tabContent li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .tabContent li time {
@@ -7380,7 +7380,7 @@ table th {
   position: relative;
 }
 .thumbnail a:hover, .thumbnail a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 .thumbnail a:focus:before {
@@ -7393,7 +7393,7 @@ table th {
   right: 0;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0px 0px 0px 1px #0e5965 inset;
+  box-shadow: 0px 0px 0px 1px #148092 inset;
 }
 .thumbnail .img-container {
   overflow: hidden;
@@ -7712,7 +7712,7 @@ table th {
 .slick-dots li.slick-active button {
   opacity: 1;
   /* 點 active 的顏色 */
-  background: #0e5965;
+  background: #148092;
 }
 .slick-dots li.slick-active button:hover {
   /* 點 active  hover的顏色 */
@@ -8377,8 +8377,8 @@ div.function ul li a {
 div.function ul li button:hover, div.function ul li button:focus,
 div.function ul li a:hover,
 div.function ul li a:focus {
-  background: #0e5965;
-  border-color: #0e5965;
+  background: #148092;
+  border-color: #148092;
 }
 div.function ul li.icon_back a:before {
   background: url(../images/basic/icon_back.svg) no-repeat center center;
@@ -8423,7 +8423,7 @@ div.function ul li.icon_forward a:before {
   transform: 0.5s;
 }
 .function_panel .function ul li a:hover, .function_panel .function ul li a:focus {
-  background: #0e5965;
+  background: #148092;
   color: #fff;
 }
 .function_panel .function ul li a:hover:before, .function_panel .function ul li a:focus:before {
@@ -8513,7 +8513,7 @@ div.function ul li.icon_forward a:before {
   background-size: 24px !important;
 }
 .function_panel .share a.shareButton:hover, .function_panel .share a.shareButton:focus {
-  background: #0e5965;
+  background: #148092;
 }
 .function_panel .share a.shareButton:hover:before, .function_panel .share a.shareButton:focus:before {
   filter: invert(100%);
@@ -9982,12 +9982,11 @@ h2.title span:after {
   }
 }
 .cp a {
-  color: #0b454f;
-  text-decoration: none;
+  color: #978045;
 }
-.cp a:hover, .cp a:focus {
-  color: #0e5965;
-  cursor: pointer;
+.cp a:hover {
+  color: #148092;
+  text-decoration: underline;
 }
 
 .file_download {
@@ -10321,7 +10320,7 @@ h2.title span:after {
   text-decoration: none;
 }
 .web_link li a:hover, .web_link li a:focus {
-  color: #0e5965;
+  color: #148092;
   cursor: pointer;
 }
 
@@ -10561,7 +10560,7 @@ h2.title span:after {
   margin: 0.5em 0;
 }
 .leftblock_list ul li a:hover {
-  color: #0e5965;
+  color: #148092;
 }
 
 .leftblock_nodemenu {
@@ -10600,7 +10599,7 @@ h2.title span:after {
   color: #333;
 }
 .leftblock_nodemenu ul li a:hover {
-  color: #0e5965;
+  color: #148092;
 }
 
 .innercontent {
@@ -11175,6 +11174,11 @@ h2.title span:after {
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:hover {
   text-decoration: underline;
 }
+.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:visited {
+  color: #978045;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
 .searchresults_block .rightblock .detailed_group .buttonoptions {
   display: flex;
   flex-wrap: wrap;
@@ -11339,6 +11343,7 @@ h2.title span:after {
   padding: 0;
   margin: 0 0 0.5em;
   transition: 0.5s;
+  line-height: 32px;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .contenttext p {
   overflow: hidden;

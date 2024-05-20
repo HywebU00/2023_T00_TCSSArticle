@@ -148,7 +148,12 @@ h2.title {
     }
   }
   a {
-    @include aSetting;
+    color: $secondaryColor;
+    // @include aSetting;
+    &:hover {
+      color: $aHover;
+      text-decoration: underline;
+    }
   }
 }
 

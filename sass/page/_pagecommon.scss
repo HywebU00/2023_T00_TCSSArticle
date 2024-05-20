@@ -572,6 +572,11 @@
                 &:hover {
                   text-decoration: underline;
                 }
+                &:visited {
+                  color: $secondaryColor;
+                  text-decoration: underline;
+                  text-decoration-thickness: 3px;
+                }
               }
             }
           }
@@ -751,6 +756,7 @@
                       padding: 0;
                       margin: 0 0 0.5em;
                       transition: 0.5s;
+                      line-height: 32px;
                     }
                   }
                   &.close {
