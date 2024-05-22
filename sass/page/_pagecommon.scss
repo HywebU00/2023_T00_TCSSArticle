@@ -570,11 +570,12 @@
               a {
                 color: #c33c00;
                 &:visited {
-                  color: $secondaryColor;
+                  color: $color-green;
                   text-decoration: underline;
                   text-decoration-thickness: 3px;
                 }
                 &:hover {
+                  color: #c33c00;
                   text-decoration: underline;
                 }
               }

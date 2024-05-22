@@ -11172,11 +11172,12 @@ h2.title span:after {
   color: #c33c00;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:visited {
-  color: #978045;
+  color: #298729;
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:hover {
+  color: #c33c00;
   text-decoration: underline;
 }
 .searchresults_block .rightblock .detailed_group .buttonoptions {
