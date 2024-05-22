@@ -569,13 +569,13 @@
               }
               a {
                 color: #c33c00;
-                &:hover {
-                  text-decoration: underline;
-                }
                 &:visited {
                   color: $secondaryColor;
                   text-decoration: underline;
                   text-decoration-thickness: 3px;
+                }
+                &:hover {
+                  text-decoration: underline;
                 }
               }
             }

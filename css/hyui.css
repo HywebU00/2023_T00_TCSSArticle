@@ -11171,13 +11171,13 @@ h2.title span:after {
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a {
   color: #c33c00;
 }
-.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:hover {
-  text-decoration: underline;
-}
 .searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:visited {
   color: #978045;
   text-decoration: underline;
   text-decoration-thickness: 3px;
+}
+.searchresults_block .rightblock .resultlist_group .resultlist .resultcontent ul li a:hover {
+  text-decoration: underline;
 }
 .searchresults_block .rightblock .detailed_group .buttonoptions {
   display: flex;
