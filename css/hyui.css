@@ -11345,6 +11345,7 @@ h2.title span:after {
   margin: 0 0 0.5em;
   transition: 0.5s;
   line-height: 32px;
+  text-indent: 2em;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .contenttext p {
   overflow: hidden;
