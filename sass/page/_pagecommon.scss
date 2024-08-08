@@ -755,7 +755,7 @@
                   .contenttext {
                     p {
                       padding: 0;
-                      margin: 0 0 0.5em;
+                      margin: 0 0 1em;
                       transition: 0.5s;
                       line-height: 32px;
                       text-indent: 2em;
@@ -765,6 +765,11 @@
                     .contenttext {
                       p {
                         @include text-line(2, 30px);
+                        display: none;
+                        &:first-of-type,
+                        &:only-child {
+                          display: -webkit-box;
+                        }
                       }
                     }
 

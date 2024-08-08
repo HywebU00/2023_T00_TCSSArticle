@@ -11342,7 +11342,7 @@ h2.title span:after {
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article .contenttext p {
   padding: 0;
-  margin: 0 0 0.5em;
+  margin: 0 0 1em;
   transition: 0.5s;
   line-height: 32px;
   text-indent: 2em;
@@ -11356,6 +11356,10 @@ h2.title span:after {
   -webkit-box-orient: vertical;
   line-height: 30px;
   height: calc(30px * 2);
+  display: none;
+}
+.searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .contenttext p:first-of-type, .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .contenttext p:only-child {
+  display: -webkit-box;
 }
 .searchresults_block .rightblock .detailed_group .detailed_information .fullmark_outdiv .table_list table td .article.close .collapsebtn a:before {
   content: "";
